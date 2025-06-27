@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "khm_apocalypse_mod:block/moon_quartz_ore"
+  }
+}

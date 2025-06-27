@@ -58,6 +58,7 @@ repositories {
     maven { url = "https://modmaven.dev" }
     maven { url = "https://www.cursemaven.com" }
     maven { url = "https://maven.shedaniel.me" }
+    maven { url "https://maven.teamresourceful.com/repository/maven-public/" }
 }
 
 dependencies {
@@ -76,7 +77,8 @@ dependencies {
 
     modCompileOnly "mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}"
     modCompileOnly "mezz.jei:jei-${project.minecraft_version}-forge-api:${project.jei_version}"
-//    modImplementation "mekanism:Mekanism:${project.minecraft_version}-${project.mekanism_version}"
+    modImplementation "mekanism:Mekanism:${project.minecraft_version}-${project.mekanism_version}"
+//    modImplementation group: "earth.terrarium.adastra", name: "ad_astra-forge-${project.minecraft_version}", version: project.ad_astra_version
 //    modImplementation "earth.terrarium.adastra:ad_astra-common-${project.minecraft_version}:${project.ad_astra_version}"
 }
 

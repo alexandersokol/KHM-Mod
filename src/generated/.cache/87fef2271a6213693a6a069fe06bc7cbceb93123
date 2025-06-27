@@ -1,0 +1,10 @@
+// 1.20.1	2025-06-28T01:45:34.763149	Tags for minecraft:block mod id khm_apocalypse_mod
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/forge/tags/blocks/mineable/paxel.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/forge/tags/blocks/ore_rates/singular.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/forge/tags/blocks/ores.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/forge/tags/blocks/ores_in_ground/moon_stone.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/mekanism/tags/blocks/atomic_disassembler_ore.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/minecraft/tags/blocks/mineable/pickaxe.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/minecraft/tags/blocks/needs_stone_tool.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/minecraft/tags/blocks/overworld_carver_replaceables.json
+3508a4e5b68a69d129dc866ad254e45d559a9101 data/minecraft/tags/blocks/snaps_goat_horn.json
