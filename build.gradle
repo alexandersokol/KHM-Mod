@@ -1,0 +1,122 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
+
+plugins {
+    id 'dev.architectury.loom' version '1.7-SNAPSHOT'
+    id 'maven-publish'
+    id 'org.jetbrains.kotlin.jvm' version '2.0.0'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '2.0.0'
+    id("com.github.johnrengelman.shadow") version "7.1.2" apply false
+}
+
+group = project.mod_group_id
+version = project.mod_version
+
+base {
+    archivesName = project.archives_name
+}
+
+def generatedResources = file("src/generated")
+
+sourceSets {
+    main {
+        resources.srcDir generatedResources
+    }
+}
+
+loom {
+    silentMojangMappingsLicense()
+
+    forge {
+        mixinConfig 'khm_apocalypse_mod.mixins'
+    }
+
+    runs {
+        data {
+            data()
+            programArgs "--all", "--mod", "khm_apocalypse_mod"
+            programArgs "--output", generatedResources.absolutePath
+            programArgs '--existing', file('src/main/resources/').absolutePath
+        }
+    }
+}
+
+repositories {
+    maven {
+        name = 'Kotlin for Forge'
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+        content { includeGroup "thedarkcolour" }
+    }
+    maven {
+        name = "Progwml6's maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven { url = "https://modmaven.dev" }
+    maven { url = "https://www.cursemaven.com" }
+    maven { url = "https://maven.shedaniel.me" }
+}
+
+dependencies {
+    minecraft "net.minecraft:minecraft:$project.minecraft_version"
+    mappings loom.officialMojangMappings()
+    forge "net.minecraftforge:forge:$project.forge_version"
+
+    implementation group: "thedarkcolour", name: "kotlinforforge", version: kff_version
+    implementation group: "thedarkcolour", name: "kfflang", version: kff_version
+    implementation group: "thedarkcolour", name: "kfflib", version: kff_version
+    implementation group: "thedarkcolour", name: "kffmod", version: kff_version
+
+    implementation "com.github.mwiede:jsch:0.2.15"
+    forgeRuntimeLibrary "com.github.mwiede:jsch:0.2.15"
+    include "com.github.mwiede:jsch:0.2.15"
+
+    modCompileOnly "mezz.jei:jei-${project.minecraft_version}-common-api:${project.jei_version}"
+    modCompileOnly "mezz.jei:jei-${project.minecraft_version}-forge-api:${project.jei_version}"
+//    modImplementation "mekanism:Mekanism:${project.minecraft_version}-${project.mekanism_version}"
+//    modImplementation "earth.terrarium.adastra:ad_astra-common-${project.minecraft_version}:${project.ad_astra_version}"
+}
+
+def replaceProperties = [
+        mod_id              : mod_id,
+        mod_name            : mod_name,
+        mod_version         : mod_version,
+        mod_authors         : mod_authors,
+        mod_description     : mod_description,
+        minecraft_version   : minecraft_version,
+        ad_astra_version_min: ad_astra_version_min,
+        mekanism_version_min: mekanism_version_min,
+        version             : project.version,
+        loader_version_range: loader_version_range,
+        mod_license         : mod_license,
+        forge_version_range: forge_version_range
+]
+
+processResources {
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties
+    }
+}
+
+java {
+    withSourcesJar()
+
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(JvmTarget.JVM_17)
+        javaParameters.set(true)
+    }
+}
