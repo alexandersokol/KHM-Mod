@@ -79,7 +79,7 @@ dependencies {
     modCompileOnly "mezz.jei:jei-${project.minecraft_version}-forge-api:${project.jei_version}"
     modImplementation "mekanism:Mekanism:${project.minecraft_version}-${project.mekanism_version}"
 //    modImplementation group: "earth.terrarium.adastra", name: "ad_astra-forge-${project.minecraft_version}", version: project.ad_astra_version
-//    modImplementation "earth.terrarium.adastra:ad_astra-common-${project.minecraft_version}:${project.ad_astra_version}"
+    modImplementation "earth.terrarium.adastra:ad_astra-common-${project.minecraft_version}:${project.ad_astra_version}"
 }
 
 def replaceProperties = [
@@ -122,3 +122,9 @@ kotlin {
         javaParameters.set(true)
     }
 }
+
+tasks.named("runData").configure {
+    dependsOn("compileKotlin")
+}
+
+//loom.runs.data.vmArgs += ["-Dkotlin.compiler.execution.strategy=in-process"]

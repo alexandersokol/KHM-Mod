@@ -1,4 +1,5 @@
 {
+  "type": "minecraft:placed_feature",
   "feature": "khm_apocalypse_mod:ore_quartz_normal",
   "placement": [
     {

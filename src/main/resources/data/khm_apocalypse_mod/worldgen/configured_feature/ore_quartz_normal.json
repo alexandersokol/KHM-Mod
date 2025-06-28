@@ -3,14 +3,16 @@
   "config": {
     "targets": [
       {
-        "state": {
-          "Name": "khm_apocalypse_mod:moon_quartz_ore"
-        },
         "target": {
           "predicate_type": "minecraft:block_match",
           "block": "ad_astra:moon_stone"
+        },
+        "state": {
+          "Name": "khm_apocalypse_mod:moon_quartz_ore"
         }
       }
-    ]
+    ],
+    "size": 8,
+    "discard_chance_on_air_exposure": 0.0
   }
 }
