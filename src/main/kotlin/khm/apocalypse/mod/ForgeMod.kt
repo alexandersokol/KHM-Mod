@@ -15,8 +15,7 @@ class ForgeMod {
 
         MinecraftForge.EVENT_BUS.register(ModRegistry::class.java)
 
-        ModRegistry.BLOCKS.register(modEventBus)
-        ModRegistry.ITEMS.register(modEventBus)
+        ModRegistry.register(modEventBus)
     }
 
     companion object {
