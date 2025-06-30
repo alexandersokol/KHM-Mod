@@ -19,8 +19,8 @@ class ForgeMod {
     }
 
     companion object {
-        const val MOD_ID = "khm_apocalypse_mod"
-        const val MOD_NAME = "Khm Apocalypse Mod"
+        const val MOD_ID = "khm"
+        const val MOD_NAME = "KHM Mod"
         val LOGGER: Logger = LogManager.getLogger(MOD_ID)
     }
 }

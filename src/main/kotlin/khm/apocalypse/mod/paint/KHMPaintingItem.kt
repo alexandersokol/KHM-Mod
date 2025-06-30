@@ -24,7 +24,7 @@ import java.util.function.Function
 
 class KHMPaintingItem(settings: Properties) : HangingEntityItem(EntityType.PAINTING, settings) {
 
-    private val defaultVariant = ModPaintingVariants.PLANT
+    private val defaultVariant = ModPaintingVariants.KHMELNITSKYI
     private val variants = ModPaintingVariantTags.KHM_PAINTINGS
 
     private fun variantArea(variant: Holder<PaintingVariant>): Int {

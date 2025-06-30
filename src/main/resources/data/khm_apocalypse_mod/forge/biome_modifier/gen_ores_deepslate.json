@@ -1,8 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#khm_apocalypse_mod:gen_ores_deepslate",
-  "features": [
-    "khm_apocalypse_mod:ore_quartz_normal"
-  ],
-  "step": "underground_ores"
-}

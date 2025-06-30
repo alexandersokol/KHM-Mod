@@ -14,9 +14,9 @@ class ModRecipeProvider(output: PackOutput) : RecipeProvider(output) {
 
     override fun buildRecipes(consumer: Consumer<FinishedRecipe>) {
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModRegistry.KHM_PAINTING.get(), 1)
-            .define('#', ItemTags.PLANKS) // '#' refers to a tag
+            .define('#', ItemTags.PLANKS)
             .define('S', Items.STICK)
-            .define('G', Items.PAPER)               // 'G' is a single item
+            .define('G', Items.PAPER)
             .pattern("S#S")
             .pattern("#G#")
             .pattern("S#S")

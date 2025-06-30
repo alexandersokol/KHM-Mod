@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "khm_apocalypse_mod:ore_quartz_normal",
-  "step": "underground_ores"
-}

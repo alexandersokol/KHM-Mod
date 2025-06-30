@@ -28,13 +28,13 @@ loom {
     silentMojangMappingsLicense()
 
     forge {
-        mixinConfig 'khm_apocalypse_mod.mixins'
+        mixinConfig 'khm.mixins'
     }
 
     runs {
         data {
             data()
-            programArgs "--all", "--mod", "khm_apocalypse_mod"
+            programArgs "--all", "--mod", "khm"
             programArgs "--output", generatedResources.absolutePath
             programArgs '--existing', file('src/main/resources/').absolutePath
         }

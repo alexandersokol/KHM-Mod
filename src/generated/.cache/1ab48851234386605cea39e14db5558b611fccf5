@@ -1,0 +1,10 @@
+// 1.20.1	2025-06-30T18:23:58.924732	Tags for minecraft:block mod id khm
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/forge/tags/blocks/mineable/paxel.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/forge/tags/blocks/ore_rates/singular.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/forge/tags/blocks/ores.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/forge/tags/blocks/ores_in_ground/moon_stone.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/mekanism/tags/blocks/atomic_disassembler_ore.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/minecraft/tags/blocks/mineable/pickaxe.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/minecraft/tags/blocks/needs_stone_tool.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/minecraft/tags/blocks/overworld_carver_replaceables.json
+f9fe1d87384b2315d15c7d9d531f5f513b1be78d data/minecraft/tags/blocks/snaps_goat_horn.json

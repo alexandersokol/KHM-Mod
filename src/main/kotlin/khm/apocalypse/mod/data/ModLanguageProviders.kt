@@ -62,8 +62,8 @@ object ModLanguageProviders {
         return object : LanguageProvider(packOutput, ForgeMod.MOD_ID, locale.localeCode) {
             override fun addTranslations() {
                 // mod name is english only.
-                add("itemGroup.khm_apocalypse_mod", ForgeMod.MOD_NAME)
-                add("item.khm_apocalypse_mod.khm_painting", "KHM Картина")
+                add("itemGroup.khm", ForgeMod.MOD_NAME)
+                add("item.khm.khm_painting", "KHM Картина")
 
                 genLocale.invoke(this)
             }
