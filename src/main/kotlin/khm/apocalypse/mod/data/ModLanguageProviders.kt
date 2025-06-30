@@ -50,6 +50,7 @@ object ModLanguageProviders {
                         "gold" in path -> "золота руда"
                         "basalt_diamond" in path -> "базальтова діамантова руда"
                         "blackstone_diamond" in path -> "темнокамінна діамантова руда"
+                        "deepslate_diamond" in path -> "глибосланцева діамантова руда"
                         "diamond" in path -> "діамантова руда"
                         "ancient" in path -> "стародавня руда"
                         "deepslate_redstone" in path -> "глибосланцева редстоун руда"
