@@ -1,9 +1,12 @@
 {
   "block.khm.elevator": "Елеватор",
-  "block.khm.mars_ancient_debris": "Марсова стародавні уламки",
+  "block.khm.mars_ancient_debris": "Марсова стародавня руда",
   "block.khm.mars_coal_ore": "Марсова вугільна руда",
   "block.khm.mars_gold_ore": "Марсова золота руда",
+  "block.khm.mars_redstone_ore": "Марсова редстоун руда",
+  "block.khm.mercury_copper_ore": "Меркурієва мідна руда",
   "block.khm.mercury_lapis_ore": "Меркурієва лазуритова руда",
+  "block.khm.mercury_redstone_ore": "Меркурієва редстоун руда",
   "block.khm.moon_coal_ore": "Місячна вугільна руда",
   "block.khm.moon_copper_ore": "Місячна мідна руда",
   "block.khm.moon_lapis_ore": "Місячна лазуритова руда",

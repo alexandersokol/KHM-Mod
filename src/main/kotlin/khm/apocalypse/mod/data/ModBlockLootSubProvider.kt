@@ -28,6 +28,7 @@ class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGIS
 
         add(ModBlocks.MERCURY_REDSTONE_ORE.get(), Items.REDSTONE, 4, 8)
         add(ModBlocks.MERCURY_LAPIS_ORE.get(), Items.LAPIS_LAZULI, 1, 4)
+        add(ModBlocks.MERCURY_COPPER_ORE.get(), Items.RAW_COPPER, 2, 4)
     }
 
     override fun getKnownBlocks(): Iterable<Block?> {
