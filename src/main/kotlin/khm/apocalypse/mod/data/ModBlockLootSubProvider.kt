@@ -42,6 +42,7 @@ class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGIS
         add(ModBlocks.GLACIO_DIAMOND_ORE.get(), Items.DIAMOND, 1, 3)
         add(ModBlocks.GLACIO_DEEPSLATE_DIAMOND_ORE.get(), Items.DIAMOND, 1, 5)
         add(ModBlocks.GLACIO_QUARTZ_ORE.get(), Items.QUARTZ, 2, 5)
+        add(ModBlocks.GLACIO_DEEPSLATE_ANCIENT_DEBRIS.get(), Items.ANCIENT_DEBRIS, 1, 1)
     }
 
     override fun getKnownBlocks(): Iterable<Block?> {

@@ -1,5 +1,6 @@
-// 1.20.1	2025-07-01T00:41:42.666512	Block States: khm
+// 1.20.1	2025-07-01T01:56:52.687665	Block States: khm
 bdcf53f87183e7124ead635273d670dc957442ca assets/khm/blockstates/elevator.json
+2b075f934b096630560eea211ea945cc1e0b4c0e assets/khm/blockstates/glacio_deepslate_ancient_debris.json
 c51d5f26466246fa9d2433b8e1009c4c74a5f744 assets/khm/blockstates/glacio_deepslate_diamond_ore.json
 c2246a8315f71ab3a3d93c1cfb8257c723f3eb09 assets/khm/blockstates/glacio_deepslate_gold_ore.json
 2d043dd17a2ddc50df6cc63aaa9c3b80c06624e4 assets/khm/blockstates/glacio_deepslate_redstone_ore.json
@@ -23,6 +24,7 @@ a2dc85f701c8b18b53ffd17ff6c0bdb2810580b9 assets/khm/blockstates/moon_quartz_ore.
 ccf0bf24f28b8f774bebe863b5a8b85fea496308 assets/khm/blockstates/venus_quartz_ore.json
 c20967fc4854a9d4fb5637462282e3de5a8ed0d0 assets/khm/blockstates/venus_redstone_ore.json
 38a6c604f87870da9c2ddc81e47308acff4cce3a assets/khm/models/block/elevator.json
+1681aeeb8d541bd3025f8f6cb05637e0ceae4bce assets/khm/models/block/glacio_deepslate_ancient_debris.json
 290e5d46a27e8e78d29d49ba425634f283a0185f assets/khm/models/block/glacio_deepslate_diamond_ore.json
 4b6476ac7f1e0b68c9cb69b7e9e308a89de533ad assets/khm/models/block/glacio_deepslate_gold_ore.json
 4992c4588928aae05115b23d4b3e2ca76a32e109 assets/khm/models/block/glacio_deepslate_redstone_ore.json
@@ -46,6 +48,7 @@ baeaa5bf736a64fd3d87d471efc5567d176626c2 assets/khm/models/block/moon_quartz_ore
 0a1071b07f8ac30f1919f98ce73cfdd599e79308 assets/khm/models/block/venus_quartz_ore.json
 26346eeca503fdf20f697133aaf6f4a81508178a assets/khm/models/block/venus_redstone_ore.json
 7104ad44eefe812faba4b06b61e10cf631eae040 assets/khm/models/item/elevator.json
+1b9309660167eefe160c594c5c46d61c7eb9895f assets/khm/models/item/glacio_deepslate_ancient_debris.json
 58fe841349c978e619211a57a5261462b1ec4ad5 assets/khm/models/item/glacio_deepslate_diamond_ore.json
 5c1e9864b96aa0346583f8e0ae505b3a695e084d assets/khm/models/item/glacio_deepslate_gold_ore.json
 68d63111864f130972eff6b7f197d7b6244d4283 assets/khm/models/item/glacio_deepslate_redstone_ore.json

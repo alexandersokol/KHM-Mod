@@ -20,7 +20,8 @@ class ModBlockStateProvider(output: PackOutput, exFileHelper: ExistingFileHelper
                 ModBlocks.MARS_ANCIENT_DEBRIS.id.path,
                 ModBlocks.ELEVATOR.id.path,
                 ModBlocks.MERCURY_BASALT_DIAMOND_ORE.id.path,
-                ModBlocks.MERCURY_BLACKSTONE_DIAMOND_ORE.id.path -> {
+                ModBlocks.MERCURY_BLACKSTONE_DIAMOND_ORE.id.path,
+                ModBlocks.GLACIO_DEEPSLATE_ANCIENT_DEBRIS.id.path -> {
                     basicCubeColumn(v.get())
                 }
 

@@ -1,5 +1,6 @@
-// 1.20.1	2025-07-01T00:41:42.66627	Loot Tables
+// 1.20.1	2025-07-01T01:56:52.687449	Loot Tables
 36a7306319eb8312ffea7eb4ff56765cd643a489 data/khm/loot_tables/blocks/elevator.json
+cb7efe0aaeb8cf14711948c7d07ad7bdc5723fb0 data/khm/loot_tables/blocks/glacio_deepslate_ancient_debris.json
 627c19382f6c5a7b245c066d04532c2f10b7a4e9 data/khm/loot_tables/blocks/glacio_deepslate_diamond_ore.json
 e2f2163fed0d6d363bccad4322f360b92872389b data/khm/loot_tables/blocks/glacio_deepslate_gold_ore.json
 9a969d564aeeeb5004baa61e1b2a9a444b2a1bd1 data/khm/loot_tables/blocks/glacio_deepslate_redstone_ore.json

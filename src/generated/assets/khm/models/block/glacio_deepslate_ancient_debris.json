@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "khm:block/glacio_deepslate_ancient_debris_top",
+    "side": "khm:block/glacio_deepslate_ancient_debris"
+  }
+}

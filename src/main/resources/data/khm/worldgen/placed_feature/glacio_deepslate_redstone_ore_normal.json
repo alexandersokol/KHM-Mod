@@ -1,6 +1,6 @@
 {
   "type": "minecraft:placed_feature",
-  "feature": "khm:glacio_gold_ore_normal",
+  "feature": "khm:glacio_deepslate_redstone_ore_normal",
   "placement": [
     {
       "type": "minecraft:count",
