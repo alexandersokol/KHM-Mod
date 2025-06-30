@@ -31,6 +31,9 @@ object ModBlocks {
     val MARS_COAL_ORE = register("mars_coal_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COAL_ORE), UniformInt.of(3, 6))
     }
+    val MARS_GOLD_ORE = register("mars_gold_ore") {
+        DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE), UniformInt.of(1, 2))
+    }
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {
         val block = BLOCKS.register(name, Supplier { supplier.invoke() })
