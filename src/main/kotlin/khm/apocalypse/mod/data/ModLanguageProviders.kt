@@ -43,6 +43,7 @@ object ModLanguageProviders {
                     val oreName = when (blockRegObj.id.path) {
                         ModBlocks.MOON_QUARTZ_ORE.id.path -> "Кварцева"
                         ModBlocks.MOON_COAL_ORE.id.path -> "Вугільна"
+                        ModBlocks.MOON_LAPIS_ORE.id.path -> "Лазуритова"
                         else -> null
                     }
 

@@ -3,7 +3,8 @@
   "biomes": "#khm:gen_ores",
   "features": [
     "khm:moon_quartz_ore_normal",
-    "khm:moon_coal_ore_normal"
+    "khm:moon_coal_ore_normal",
+    "khm:moon_lapis_ore_normal"
   ],
   "step": "underground_ores"
 }
