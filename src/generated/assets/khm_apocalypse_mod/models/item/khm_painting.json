@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "khm_apocalypse_mod:item/khm_painting"
+  }
+}

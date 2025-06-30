@@ -63,6 +63,8 @@ object ModLanguageProviders {
             override fun addTranslations() {
                 // mod name is english only.
                 add("itemGroup.khm_apocalypse_mod", ForgeMod.MOD_NAME)
+                add("item.khm_apocalypse_mod.khm_painting", "KHM Картина")
+
                 genLocale.invoke(this)
             }
         }

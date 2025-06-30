@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "overworld_netherite_ore:block/netheriteore_top",
+    "up": "overworld_netherite_ore:block/netheriteore_top",
+    "north": "overworld_netherite_ore:block/netheriteore",
+    "east": "overworld_netherite_ore:block/netheriteore",
+    "south": "overworld_netherite_ore:block/netheriteore",
+    "west": "overworld_netherite_ore:block/netheriteore",
+    "particle": "overworld_netherite_ore:block/netheriteore_top"
+  },
+  "render_type": "solid"
+}

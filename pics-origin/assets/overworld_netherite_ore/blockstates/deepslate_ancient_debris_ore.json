@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "overworld_netherite_ore:block/deepslate_ancient_debris_ore"
+    },
+    "facing=east": {
+      "model": "overworld_netherite_ore:block/deepslate_ancient_debris_ore",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "overworld_netherite_ore:block/deepslate_ancient_debris_ore",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "overworld_netherite_ore:block/deepslate_ancient_debris_ore",
+      "y": 270
+    }
+  }
+}

@@ -1,5 +1,7 @@
 package khm.apocalypse.mod
 
+import khm.apocalypse.mod.paint.KHMPaintingItem
+import khm.apocalypse.mod.paint.ModPaintingVariants
 import net.minecraft.core.registries.Registries
 import net.minecraft.network.chat.Component
 import net.minecraft.util.valueproviders.UniformInt
@@ -37,6 +39,10 @@ object ModRegistry {
         return block
     }
 
+// public static final RegistryEntry<Item> SPACE_PAINTING = BASIC_ITEMS.register("space_painting", () -> new SpacePaintingItem(new Item.Properties(), ModPaintingVariants.EARTH, ModPaintingVariantTags.SPACE_PAINTINGS));
+
+    val KHM_PAINTING = ITEMS.register("khm_painting") { KHMPaintingItem(Item.Properties()) }
+
     fun register(bus: IEventBus) {
 
         CREATIVE_MODE_TABS.register("items") {
@@ -52,7 +58,7 @@ object ModRegistry {
 
         BLOCKS.register(bus)
         ITEMS.register(bus)
+        ModPaintingVariants.register(bus)
         CREATIVE_MODE_TABS.register(bus)
     }
-
 }

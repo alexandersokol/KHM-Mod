@@ -1,6 +1,7 @@
 package khm.apocalypse.mod.data
 
 import khm.apocalypse.mod.ForgeMod
+import khm.apocalypse.mod.paint.ModPaintingVariantTagsProvider
 import net.minecraftforge.data.event.GatherDataEvent
 import net.minecraftforge.eventbus.api.SubscribeEvent
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber
@@ -31,6 +32,12 @@ object DataGenerator {
         generator.addProvider(event.includeClient(), ModItemModelProvider(packOutput, existingFileHelper))
         ModLanguageProviders.getLanguageProviders(packOutput)
             .forEach { p -> generator.addProvider(event.includeClient(), p) }
+
+        generator.addProvider(
+            event.includeServer(),
+            ModPaintingVariantTagsProvider(packOutput, lookupProvider, existingFileHelper)
+        )
+        generator.addProvider(event.includeServer(), ModRecipeProvider(packOutput))
     }
 
 }
