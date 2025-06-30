@@ -11,6 +11,7 @@ object ModPaintingVariants {
     val PAINTING_VARIANTS = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, ForgeMod.MOD_ID)
 
     val KHMELNITSKYI = PAINTING_VARIANTS.register("khmelnitskyi") { PaintingVariant(32, 32) }
+    val ALEX = PAINTING_VARIANTS.register("alex") { PaintingVariant(16, 32) }
 
     fun register(bus: IEventBus) {
         PAINTING_VARIANTS.register(bus)

@@ -42,7 +42,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:coal_ore"
+              "name": "minecraft:coal"
             }
           ]
         }
