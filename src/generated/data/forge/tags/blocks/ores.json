@@ -14,6 +14,8 @@
     "khm:mercury_basalt_diamond_ore",
     "khm:mercury_blackstone_diamond_ore",
     "khm:venus_redstone_ore",
-    "khm:venus_quartz_ore"
+    "khm:venus_quartz_ore",
+    "khm:glacio_gold_ore",
+    "khm:glacio_deepslate_gold_ore"
   ]
 }

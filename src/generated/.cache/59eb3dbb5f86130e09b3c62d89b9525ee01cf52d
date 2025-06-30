@@ -1,5 +1,7 @@
-// 1.20.1	2025-07-01T00:05:05.131477	Loot Tables
+// 1.20.1	2025-07-01T00:19:36.741533	Loot Tables
 36a7306319eb8312ffea7eb4ff56765cd643a489 data/khm/loot_tables/blocks/elevator.json
+e2f2163fed0d6d363bccad4322f360b92872389b data/khm/loot_tables/blocks/glacio_deepslate_gold_ore.json
+55d2471c6999e569d6283c007f38adb5032f1869 data/khm/loot_tables/blocks/glacio_gold_ore.json
 b93d6f5a274046b1a5a0da27dfe94757f09efb50 data/khm/loot_tables/blocks/mars_ancient_debris.json
 20450bd88a108833dc6046e5dea1ea538212b9e0 data/khm/loot_tables/blocks/mars_coal_ore.json
 f8e11675a0f608b2b9b3e10708bed1a931f70cdf data/khm/loot_tables/blocks/mars_gold_ore.json

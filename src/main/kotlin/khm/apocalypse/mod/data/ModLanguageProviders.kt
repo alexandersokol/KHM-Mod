@@ -46,6 +46,7 @@ object ModLanguageProviders {
                         "coal" in path -> "вугільна руда"
                         "lapis" in path -> "лазуритова руда"
                         "copper" in path -> "мідна руда"
+                        "deepslate_gold" in path -> "глибосланцева руда"
                         "gold" in path -> "золота руда"
                         "basalt_diamond" in path -> "базальтова діамантова руда"
                         "blackstone_diamond" in path -> "темнокамінна діамантова руда"

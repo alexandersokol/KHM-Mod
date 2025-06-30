@@ -1,5 +1,7 @@
-// 1.20.1	2025-07-01T00:05:05.131703	Block States: khm
+// 1.20.1	2025-07-01T00:14:17.322438	Block States: khm
 bdcf53f87183e7124ead635273d670dc957442ca assets/khm/blockstates/elevator.json
+c2246a8315f71ab3a3d93c1cfb8257c723f3eb09 assets/khm/blockstates/glacio_deepslate_gold_ore.json
+ce71c48d28b796ee64fe4272bb0694066c83a71c assets/khm/blockstates/glacio_gold_ore.json
 0590cc87c19308879395902b14f8862ed3611f22 assets/khm/blockstates/mars_ancient_debris.json
 679f1254dc8ac8e37c895d1ea797835fdf4a83af assets/khm/blockstates/mars_coal_ore.json
 a3c5505f714d0a83590ce430b92918c5e3538797 assets/khm/blockstates/mars_gold_ore.json
@@ -16,6 +18,8 @@ a2dc85f701c8b18b53ffd17ff6c0bdb2810580b9 assets/khm/blockstates/moon_quartz_ore.
 ccf0bf24f28b8f774bebe863b5a8b85fea496308 assets/khm/blockstates/venus_quartz_ore.json
 c20967fc4854a9d4fb5637462282e3de5a8ed0d0 assets/khm/blockstates/venus_redstone_ore.json
 38a6c604f87870da9c2ddc81e47308acff4cce3a assets/khm/models/block/elevator.json
+4b6476ac7f1e0b68c9cb69b7e9e308a89de533ad assets/khm/models/block/glacio_deepslate_gold_ore.json
+ac133e1998c974f435c5e75a07db4c45af0b3d17 assets/khm/models/block/glacio_gold_ore.json
 6ab903fd833fb93983d737813846d5f6cc41518a assets/khm/models/block/mars_ancient_debris.json
 03c6d25a3a74f03e7184f2954350e74c3e06cab1 assets/khm/models/block/mars_coal_ore.json
 0950247ba7c0cb9501faa16da388e14167dc756e assets/khm/models/block/mars_gold_ore.json
@@ -32,6 +36,8 @@ baeaa5bf736a64fd3d87d471efc5567d176626c2 assets/khm/models/block/moon_quartz_ore
 0a1071b07f8ac30f1919f98ce73cfdd599e79308 assets/khm/models/block/venus_quartz_ore.json
 26346eeca503fdf20f697133aaf6f4a81508178a assets/khm/models/block/venus_redstone_ore.json
 7104ad44eefe812faba4b06b61e10cf631eae040 assets/khm/models/item/elevator.json
+5c1e9864b96aa0346583f8e0ae505b3a695e084d assets/khm/models/item/glacio_deepslate_gold_ore.json
+10066702c936ff0afb3ed65c0a4f1aab248f15bf assets/khm/models/item/glacio_gold_ore.json
 89121a769c363d0801e9f9f5b7f5ac694437669a assets/khm/models/item/mars_ancient_debris.json
 43b68c67840c22c2f78960de81a2408344c73f2d assets/khm/models/item/mars_coal_ore.json
 b38bf0e9995a853126b76a9edfcae94eb434823e assets/khm/models/item/mars_gold_ore.json

@@ -66,6 +66,12 @@ object ModBlocks {
     val VENUS_QUARTZ_ORE = register("venus_quartz_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE), UniformInt.of(3, 7))
     }
+    val GLACIO_GOLD_ORE = register("glacio_gold_ore") {
+        DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE), UniformInt.of(3, 6))
+    }
+    val GLACIO_DEEPSLATE_GOLD_ORE = register("glacio_deepslate_gold_ore") {
+        DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE), UniformInt.of(3, 8))
+    }
 
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {
