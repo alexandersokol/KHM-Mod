@@ -1,4 +1,7 @@
-// 1.20.1	2025-06-30T18:23:58.92413	Block States: khm
+// 1.20.1	2025-06-30T20:15:54.483046	Block States: khm
+c4f0f6f222810a1b93e2af3e35bcf37916dfb089 assets/khm/blockstates/moon_coal_ore.json
 a2dc85f701c8b18b53ffd17ff6c0bdb2810580b9 assets/khm/blockstates/moon_quartz_ore.json
+31d437f4d05e4200d6b5be1a30bfbeed79a4b717 assets/khm/models/block/moon_coal_ore.json
 baeaa5bf736a64fd3d87d471efc5567d176626c2 assets/khm/models/block/moon_quartz_ore.json
+9abbefe8e25a55a375f8d4ee142a338c60f7cf14 assets/khm/models/item/moon_coal_ore.json
 ee4cd23ab3afe651770d93a62c567eee59f889b3 assets/khm/models/item/moon_quartz_ore.json

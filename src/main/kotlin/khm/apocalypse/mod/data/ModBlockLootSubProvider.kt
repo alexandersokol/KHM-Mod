@@ -13,14 +13,15 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator
 class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGISTRY.allFlags()) {
 
     override fun generate() {
-        add(ModBlocks.MOON_QUARTZ_ORE.get(), Items.QUARTZ)
+        add(ModBlocks.MOON_QUARTZ_ORE.get(), Items.QUARTZ, 2, 4)
+        add(ModBlocks.MOON_COAL_ORE.get(), Items.COAL_ORE, 3, 6)
     }
 
     override fun getKnownBlocks(): Iterable<Block?> {
         return ModBlocks.BLOCKS.entries.map { it.get() }
     }
 
-    private fun add(block: Block, item: Item) {
+    private fun add(block: Block, item: Item, min: Int, max: Int) {
         add(
             block,
             createSilkTouchDispatchTable(
@@ -28,7 +29,7 @@ class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGIS
                 applyExplosionDecay(
                     block,
                     LootItem.lootTableItem(item)
-                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0f, 4.0f)))
+                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(min.toFloat(), max.toFloat())))
                 )
             )
         )

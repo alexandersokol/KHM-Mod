@@ -1,6 +1,6 @@
 {
   "type": "minecraft:placed_feature",
-  "feature": "khm:ore_quartz_normal",
+  "feature": "khm:moon_coal_ore_normal",
   "placement": [
     {
       "type": "minecraft:count",
@@ -14,10 +14,10 @@
       "height": {
         "type": "minecraft:uniform",
         "min_inclusive": {
-          "absolute": -64
+          "absolute": 0
         },
         "max_inclusive": {
-          "absolute": 64
+          "absolute": 80
         }
       }
     },

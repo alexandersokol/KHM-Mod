@@ -4,9 +4,9 @@
     <bytecodeTargetLevel target="17" />
   </component>
   <component name="JavacSettings">
-    <option name="ADDITIONAL_OPTIONS_STRING" value="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/main/khm-apocalypse-mod-forge-1.20.1-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.20.1/loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0/mappings-mixin-srg.tiny" />
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/main/khm-mod-forge-1.20.1-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0.main.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.20.1/loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0/mappings-mixin-srg.tiny" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="khm-apocalypse-mod.test" options="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/test/test-khm-apocalypse-mod-forge-1.20.1-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.20.1/loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0/mappings-mixin-srg.tiny" />
+      <module name="khm-apocalypse-mod.test" options="-AoutRefMapFile=$PROJECT_DIR$/build/classes/java/test/test-khm-mod-forge-1.20.1-refmap.json -AdefaultObfuscationEnv=named:intermediary -Aquiet=true -AoutMapFileNamedIntermediary=$PROJECT_DIR$/build/loom-cache/mixin-map-loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0.test.tiny -AinMapFileNamedIntermediary=$USER_HOME$/.gradle/caches/fabric-loom/1.20.1/loom.mappings.1_20_1.layered+hash.40359-v2-forge-1.20.1-47.4.0/mappings-mixin-srg.tiny" />
     </option>
   </component>
 </project>
