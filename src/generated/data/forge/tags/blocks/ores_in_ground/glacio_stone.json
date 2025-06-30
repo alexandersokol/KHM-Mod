@@ -1,6 +1,8 @@
 {
   "values": [
     "khm:glacio_gold_ore",
-    "khm:glacio_deepslate_gold_ore"
+    "khm:glacio_deepslate_gold_ore",
+    "khm:glacio_redstone_ore",
+    "khm:glacio_deepslate_redstone_ore"
   ]
 }

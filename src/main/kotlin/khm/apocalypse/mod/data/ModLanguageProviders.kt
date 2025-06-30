@@ -46,12 +46,13 @@ object ModLanguageProviders {
                         "coal" in path -> "вугільна руда"
                         "lapis" in path -> "лазуритова руда"
                         "copper" in path -> "мідна руда"
-                        "deepslate_gold" in path -> "глибосланцева руда"
+                        "deepslate_gold" in path -> "глибосланцева золота руда"
                         "gold" in path -> "золота руда"
                         "basalt_diamond" in path -> "базальтова діамантова руда"
                         "blackstone_diamond" in path -> "темнокамінна діамантова руда"
                         "diamond" in path -> "діамантова руда"
                         "ancient" in path -> "стародавня руда"
+                        "deepslate_redstone" in path -> "глибосланцева редстоун руда"
                         "redstone" in path -> "редстоун руда"
                         else -> null
                     }

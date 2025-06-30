@@ -72,7 +72,12 @@ object ModBlocks {
     val GLACIO_DEEPSLATE_GOLD_ORE = register("glacio_deepslate_gold_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_GOLD_ORE), UniformInt.of(3, 8))
     }
-
+    val GLACIO_REDSTONE_ORE = register("glacio_redstone_ore") {
+        RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE))
+    }
+    val GLACIO_DEEPSLATE_REDSTONE_ORE = register("glacio_deepslate_redstone_ore") {
+        RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_REDSTONE_ORE))
+    }
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {
         val block = BLOCKS.register(name, Supplier { supplier.invoke() })

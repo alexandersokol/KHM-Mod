@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:placed_feature",
+  "feature": "khm:glacio_redstone_ore_normal",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 8
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "max_inclusive": {
+          "absolute": 100
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

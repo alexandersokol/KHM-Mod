@@ -18,7 +18,9 @@
     "khm:venus_quartz_ore_normal",
     "khm:venus_redstone_ore_normal",
     "khm:glacio_gold_ore_normal",
-    "khm:glacio_deepslate_gold_ore_normal"
+    "khm:glacio_deepslate_gold_ore_normal",
+    "khm:glacio_redstone_ore_normal",
+    "khm:glacio_deepslate_redstone_ore_normal"
   ],
   "step": "underground_ores"
 }

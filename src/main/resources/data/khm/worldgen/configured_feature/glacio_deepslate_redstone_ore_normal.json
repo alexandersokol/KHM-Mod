@@ -5,14 +5,14 @@
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "ad_astra:glacio_stone"
+          "block": "minecraft:deepslate"
         },
         "state": {
-          "Name": "khm:glacio_gold_ore"
+          "Name": "khm:glacio_deepslate_redstone_ore"
         }
       }
     ],
-    "size": 6,
+    "size": 8,
     "discard_chance_on_air_exposure": 0.0
   }
 }
