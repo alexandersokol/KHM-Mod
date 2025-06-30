@@ -20,15 +20,13 @@ class ModItemTagsProvider(
 ) : ItemTagsProvider(arg, completableFuture, completableFuture2, ForgeMod.MOD_ID, existingFileHelper) {
 
     override fun addTags(arg: HolderLookup.Provider) {
-        ModRegistry.ITEMS.entries.forEach {
-            if (it.id.path != ModRegistry.KHM_PAINTING.id.path) {
-                // forge:ores
-                this.tag(Tags.Items.ORES).add(it.get())
+        khm.apocalypse.mod.ModItems.BLOCK_ITEMS.entries.forEach {
+            // forge:ores
+            this.tag(Tags.Items.ORES).add(it.get())
 
-                this.tag(Tags.Items.ORE_RATES_SINGULAR).add(it.get())
-                // forge:ores_in_ground/...
-                this.tag(ItemTags.create(oresInGround(it.id))).add(it.get())
-            }
+            this.tag(Tags.Items.ORE_RATES_SINGULAR).add(it.get())
+            // forge:ores_in_ground/...
+            this.tag(ItemTags.create(oresInGround(it.id))).add(it.get())
         }
     }
 

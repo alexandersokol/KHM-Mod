@@ -1,6 +1,6 @@
 package khm.apocalypse.mod.data
 
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModItems
 import net.minecraft.data.PackOutput
 import net.minecraft.data.recipes.FinishedRecipe
 import net.minecraft.data.recipes.RecipeCategory
@@ -13,7 +13,7 @@ import java.util.function.Consumer
 class ModRecipeProvider(output: PackOutput) : RecipeProvider(output) {
 
     override fun buildRecipes(consumer: Consumer<FinishedRecipe>) {
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModRegistry.KHM_PAINTING.get(), 1)
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.KHM_PAINTING.get(), 1)
             .define('#', ItemTags.PLANKS)
             .define('S', Items.STICK)
             .define('G', Items.PAPER)

@@ -1,7 +1,7 @@
 package khm.apocalypse.mod.data
 
 import khm.apocalypse.mod.ForgeMod
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModBlocks
 import net.minecraft.data.PackOutput
 import net.minecraft.world.level.block.Block
 import net.minecraftforge.common.data.LanguageProvider
@@ -21,7 +21,7 @@ object ModLanguageProviders {
 
     fun getLanguageProvider(packOutput: PackOutput, locale: SupportedLocales): LanguageProvider {
         val oreNames: Map<RegistryObject<Block>, List<String>> = buildMap {
-            for (entry in ModRegistry.BLOCKS.entries) {
+            for (entry in ModBlocks.BLOCKS.entries) {
                 val pathParts = entry.id.path.split("_")
                 put(entry, pathParts)
             }
@@ -41,7 +41,7 @@ object ModLanguageProviders {
 
 
                     val oreName = when (blockRegObj.id.path) {
-                        ModRegistry.MOON_QUARTZ_ORE.id.path -> "Кварцева"
+                        ModBlocks.MOON_QUARTZ_ORE.id.path -> "Кварцева"
                         else -> null
                     }
 

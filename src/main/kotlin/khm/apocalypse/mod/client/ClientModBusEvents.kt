@@ -1,7 +1,7 @@
 package khm.apocalypse.mod.client
 
 import khm.apocalypse.mod.ForgeMod
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModItems
 import net.minecraft.world.item.CreativeModeTabs
 import net.minecraft.world.item.Item
 import net.minecraftforge.api.distmarker.Dist
@@ -20,7 +20,7 @@ class ClientModBusEvents {
     @SubscribeEvent
     fun onBuildCreativeTabs(event: BuildCreativeModeTabContentsEvent) {
         if (event.tabKey === CreativeModeTabs.NATURAL_BLOCKS) {
-            ModRegistry.ITEMS.getEntries()
+            ModItems.ITEMS.getEntries()
                 .forEach(Consumer { itemRegistryObject: RegistryObject<Item> -> event.accept(itemRegistryObject.get()) })
         }
     }

@@ -1,6 +1,6 @@
 package khm.apocalypse.mod.paint
 
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModItems
 import net.minecraft.Util
 import net.minecraft.core.BlockPos
 import net.minecraft.core.Direction
@@ -35,11 +35,11 @@ class KHMPaintingItem(settings: Properties) : HangingEntityItem(EntityType.PAINT
         val painting: Painting = object :
             Painting(level, pos, direction, BuiltInRegistries.PAINTING_VARIANT.wrapAsHolder(defaultVariant.get())) {
             override fun spawnAtLocation(item: ItemLike): ItemEntity? {
-                return super.spawnAtLocation(ModRegistry.KHM_PAINTING.get())
+                return super.spawnAtLocation(ModItems.KHM_PAINTING.get())
             }
 
             override fun getPickResult(): ItemStack {
-                return ItemStack(ModRegistry.KHM_PAINTING.get())
+                return ItemStack(ModItems.KHM_PAINTING.get())
             }
         }
         val list: MutableList<Holder<PaintingVariant>> = ArrayList<Holder<PaintingVariant>>()

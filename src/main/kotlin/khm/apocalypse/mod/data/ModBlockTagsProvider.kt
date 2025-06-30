@@ -1,7 +1,7 @@
 package khm.apocalypse.mod.data
 
 import khm.apocalypse.mod.ForgeMod
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModBlocks
 import khm.apocalypse.mod.oresInGround
 import net.minecraft.core.HolderLookup
 import net.minecraft.data.PackOutput
@@ -20,7 +20,7 @@ class ModBlockTagsProvider(
 ) : BlockTagsProvider(output, lookupProvider, ForgeMod.MOD_ID, existingFileHelper) {
 
     override fun addTags(arg: HolderLookup.Provider) {
-        ModRegistry.BLOCKS.entries.forEach {
+        ModBlocks.BLOCKS.entries.forEach {
             // forge:ores
             this.tag(Tags.Blocks.ORES).add(it.get())
             this.tag(Tags.Blocks.ORE_RATES_SINGULAR).add(it.get())

@@ -1,7 +1,7 @@
 package khm.apocalypse.mod.data
 
 import khm.apocalypse.mod.ForgeMod
-import khm.apocalypse.mod.ModRegistry
+import khm.apocalypse.mod.ModItems
 import net.minecraft.data.PackOutput
 import net.minecraftforge.client.model.generators.ItemModelProvider
 import net.minecraftforge.common.data.ExistingFileHelper
@@ -12,6 +12,6 @@ class ModItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
     override fun registerModels() {
         // All items have the same model as blocks
 
-        basicItem(ModRegistry.KHM_PAINTING.get())
+        basicItem(ModItems.KHM_PAINTING.get())
     }
 }
