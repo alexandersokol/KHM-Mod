@@ -1,10 +1,11 @@
 {
   "block.khm.elevator": "Елеватор",
-  "block.khm.glacio_deepslate_diamond_ore": "Льодовикова діамантова руда",
+  "block.khm.glacio_deepslate_diamond_ore": "Льодовикова глибосланцева діамантова руда",
   "block.khm.glacio_deepslate_gold_ore": "Льодовикова глибосланцева золота руда",
   "block.khm.glacio_deepslate_redstone_ore": "Льодовикова глибосланцева редстоун руда",
   "block.khm.glacio_diamond_ore": "Льодовикова діамантова руда",
   "block.khm.glacio_gold_ore": "Льодовикова золота руда",
+  "block.khm.glacio_quartz_ore": "Льодовикова кварцева руда",
   "block.khm.glacio_redstone_ore": "Льодовикова редстоун руда",
   "block.khm.mars_ancient_debris": "Марсова стародавня руда",
   "block.khm.mars_coal_ore": "Марсова вугільна руда",

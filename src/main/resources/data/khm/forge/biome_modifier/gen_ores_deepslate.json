@@ -22,7 +22,8 @@
     "khm:glacio_redstone_ore_normal",
     "khm:glacio_deepslate_redstone_ore_normal",
     "khm:glacio_diamond_ore_normal",
-    "khm:glacio_deepslate_diamond_ore_normal"
+    "khm:glacio_deepslate_diamond_ore_normal",
+    "khm:glacio_quartz_ore_normal"
   ],
   "step": "underground_ores"
 }
