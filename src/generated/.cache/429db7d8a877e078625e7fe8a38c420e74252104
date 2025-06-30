@@ -1,12 +1,15 @@
-// 1.20.1	2025-06-30T20:35:42.77109	Block States: khm
+// 1.20.1	2025-06-30T20:40:38.976719	Block States: khm
+679f1254dc8ac8e37c895d1ea797835fdf4a83af assets/khm/blockstates/mars_coal_ore.json
 c4f0f6f222810a1b93e2af3e35bcf37916dfb089 assets/khm/blockstates/moon_coal_ore.json
 250be9dffd4810ae5447f5e285ca7812dc0e841e assets/khm/blockstates/moon_copper_ore.json
 250e2313c2a9186a362c84ac1301b94489592318 assets/khm/blockstates/moon_lapis_ore.json
 a2dc85f701c8b18b53ffd17ff6c0bdb2810580b9 assets/khm/blockstates/moon_quartz_ore.json
+03c6d25a3a74f03e7184f2954350e74c3e06cab1 assets/khm/models/block/mars_coal_ore.json
 31d437f4d05e4200d6b5be1a30bfbeed79a4b717 assets/khm/models/block/moon_coal_ore.json
 9777ebac3201b0901c3bc4a6cfed7e9444536945 assets/khm/models/block/moon_copper_ore.json
 277d98d2d4b5606a9f9f79fa92314fc551963ff5 assets/khm/models/block/moon_lapis_ore.json
 baeaa5bf736a64fd3d87d471efc5567d176626c2 assets/khm/models/block/moon_quartz_ore.json
+43b68c67840c22c2f78960de81a2408344c73f2d assets/khm/models/item/mars_coal_ore.json
 9abbefe8e25a55a375f8d4ee142a338c60f7cf14 assets/khm/models/item/moon_coal_ore.json
 a8fe17104f26fecdf93e9dcff1194f088f3b42e1 assets/khm/models/item/moon_copper_ore.json
 854b1dc900cf92b2baf0c900dc161e54a38e0dc7 assets/khm/models/item/moon_lapis_ore.json
