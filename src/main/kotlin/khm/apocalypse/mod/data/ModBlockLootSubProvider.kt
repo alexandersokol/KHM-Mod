@@ -23,7 +23,7 @@ class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGIS
         add(ModBlocks.MARS_REDSTONE_ORE.get(), Items.REDSTONE, 4, 8)
         add(ModBlocks.MARS_ANCIENT_DEBRIS.get(), Items.ANCIENT_DEBRIS, 1, 1)
 
-
+        add(ModBlocks.MERCURY_REDSTONE_ORE.get(), Items.REDSTONE, 4, 8)
     }
 
     override fun getKnownBlocks(): Iterable<Block?> {
