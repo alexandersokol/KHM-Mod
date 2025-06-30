@@ -8,7 +8,8 @@
     "khm:moon_copper_ore_normal",
     "khm:mars_coal_ore_normal",
     "khm:mars_gold_ore_normal",
-    "khm:mars_redstone_ore_normal"
+    "khm:mars_redstone_ore_normal",
+    "khm:mars_ancient_debris_normal"
   ],
   "step": "underground_ores"
 }

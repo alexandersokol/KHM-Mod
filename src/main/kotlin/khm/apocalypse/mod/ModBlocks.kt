@@ -38,6 +38,9 @@ object ModBlocks {
     val MARS_REDSTONE_ORE = register("mars_redstone_ore") {
         RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE))
     }
+    val MARS_ANCIENT_DEBRIS = register("mars_ancient_debris") {
+        Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS))
+    }
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {
         val block = BLOCKS.register(name, Supplier { supplier.invoke() })

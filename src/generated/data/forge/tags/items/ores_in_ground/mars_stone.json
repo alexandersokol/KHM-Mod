@@ -2,6 +2,7 @@
   "values": [
     "khm:mars_coal_ore",
     "khm:mars_gold_ore",
-    "khm:mars_redstone_ore"
+    "khm:mars_redstone_ore",
+    "khm:mars_ancient_debris"
   ]
 }

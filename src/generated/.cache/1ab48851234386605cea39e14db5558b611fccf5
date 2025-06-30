@@ -1,11 +1,11 @@
-// 1.20.1	2025-06-30T20:57:06.08251	Tags for minecraft:block mod id khm
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/forge/tags/blocks/mineable/paxel.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/forge/tags/blocks/ore_rates/singular.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/forge/tags/blocks/ores.json
-dbc63ad2c1dfab337bc6df44a4013ae3144a7b6d data/forge/tags/blocks/ores_in_ground/mars_stone.json
+// 1.20.1	2025-06-30T21:24:57.355037	Tags for minecraft:block mod id khm
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/forge/tags/blocks/mineable/paxel.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/forge/tags/blocks/ore_rates/singular.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/forge/tags/blocks/ores.json
+3134a4091ded6e5f2b4e7b62a46260bd2e0cbb4a data/forge/tags/blocks/ores_in_ground/mars_stone.json
 64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/ores_in_ground/moon_stone.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/mekanism/tags/blocks/atomic_disassembler_ore.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/minecraft/tags/blocks/mineable/pickaxe.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/minecraft/tags/blocks/needs_stone_tool.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/minecraft/tags/blocks/overworld_carver_replaceables.json
-9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/minecraft/tags/blocks/snaps_goat_horn.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/mekanism/tags/blocks/atomic_disassembler_ore.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/minecraft/tags/blocks/mineable/pickaxe.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/minecraft/tags/blocks/needs_stone_tool.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/minecraft/tags/blocks/overworld_carver_replaceables.json
+7bfc45af591c59437a5d545d93e24d322bd8f700 data/minecraft/tags/blocks/snaps_goat_horn.json
