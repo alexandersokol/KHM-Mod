@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "khm:block/mercury_blackstone_diamond_ore_top",
+    "side": "khm:block/mercury_blackstone_diamond_ore"
+  }
+}

@@ -17,7 +17,10 @@ class ModBlockStateProvider(output: PackOutput, exFileHelper: ExistingFileHelper
         val blocks = ModBlocks.BLOCKS.entries + ModBlocks.OTHER_BLOCKS.entries
         blocks.forEach { v ->
             when (v.id.path) {
-                ModBlocks.MARS_ANCIENT_DEBRIS.id.path, ModBlocks.ELEVATOR.id.path -> {
+                ModBlocks.MARS_ANCIENT_DEBRIS.id.path,
+                ModBlocks.ELEVATOR.id.path,
+                ModBlocks.MERCURY_BASALT_DIAMOND_ORE.id.path,
+                ModBlocks.MERCURY_BLACKSTONE_DIAMOND_ORE.id.path -> {
                     basicCubeColumn(v.get())
                 }
 

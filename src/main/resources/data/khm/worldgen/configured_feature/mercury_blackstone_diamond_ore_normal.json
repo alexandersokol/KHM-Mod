@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "minecraft:blackstone"
+        },
+        "state": {
+          "Name": "khm:mercury_blackstone_diamond_ore"
+        }
+      }
+    ],
+    "size": 2,
+    "discard_chance_on_air_exposure": 0.0
+  }
+}

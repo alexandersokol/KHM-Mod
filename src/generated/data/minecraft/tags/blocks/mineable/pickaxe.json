@@ -10,6 +10,8 @@
     "khm:mars_ancient_debris",
     "khm:mercury_redstone_ore",
     "khm:mercury_lapis_ore",
-    "khm:mercury_copper_ore"
+    "khm:mercury_copper_ore",
+    "khm:mercury_basalt_diamond_ore",
+    "khm:mercury_blackstone_diamond_ore"
   ]
 }
