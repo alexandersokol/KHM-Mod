@@ -1,5 +1,5 @@
-// 1.20.1	2025-06-30T20:44:53.670569	Tags for minecraft:item mod id khm
-5fbb2cbed89814f4253571042e8c540ae98b3a59 data/forge/tags/items/ore_rates/singular.json
-5fbb2cbed89814f4253571042e8c540ae98b3a59 data/forge/tags/items/ores.json
-a62de516e19398361cb5f143613fbe8baff49be6 data/forge/tags/items/ores_in_ground/mars_stone.json
+// 1.20.1	2025-06-30T20:57:06.08154	Tags for minecraft:item mod id khm
+9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/forge/tags/items/ore_rates/singular.json
+9fa85b611a5b923724b0f0fba8a8e54bd2dcff3e data/forge/tags/items/ores.json
+dbc63ad2c1dfab337bc6df44a4013ae3144a7b6d data/forge/tags/items/ores_in_ground/mars_stone.json
 64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/items/ores_in_ground/moon_stone.json

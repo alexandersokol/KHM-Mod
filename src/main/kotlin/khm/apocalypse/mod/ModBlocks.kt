@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item
 import net.minecraft.world.level.block.Block
 import net.minecraft.world.level.block.Blocks
 import net.minecraft.world.level.block.DropExperienceBlock
+import net.minecraft.world.level.block.RedStoneOreBlock
 import net.minecraft.world.level.block.state.BlockBehaviour
 import net.minecraftforge.registries.DeferredRegister
 import net.minecraftforge.registries.ForgeRegistries
@@ -33,6 +34,9 @@ object ModBlocks {
     }
     val MARS_GOLD_ORE = register("mars_gold_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.GOLD_ORE), UniformInt.of(1, 2))
+    }
+    val MARS_REDSTONE_ORE = register("mars_redstone_ore") {
+        RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE))
     }
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {

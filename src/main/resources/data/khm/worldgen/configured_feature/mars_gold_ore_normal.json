@@ -5,7 +5,7 @@
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "ad_astra:moon_stone"
+          "block": "ad_astra:mars_stone"
         },
         "state": {
           "Name": "khm:mars_gold_ore"
