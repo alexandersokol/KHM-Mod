@@ -12,6 +12,8 @@
     "khm:mercury_lapis_ore",
     "khm:mercury_copper_ore",
     "khm:mercury_basalt_diamond_ore",
-    "khm:mercury_blackstone_diamond_ore"
+    "khm:mercury_blackstone_diamond_ore",
+    "khm:venus_redstone_ore",
+    "khm:venus_quartz_ore"
   ]
 }

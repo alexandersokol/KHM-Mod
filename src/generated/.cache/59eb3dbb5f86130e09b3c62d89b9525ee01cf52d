@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-30T23:56:31.737567	Loot Tables
+// 1.20.1	2025-07-01T00:05:05.131477	Loot Tables
 36a7306319eb8312ffea7eb4ff56765cd643a489 data/khm/loot_tables/blocks/elevator.json
 b93d6f5a274046b1a5a0da27dfe94757f09efb50 data/khm/loot_tables/blocks/mars_ancient_debris.json
 20450bd88a108833dc6046e5dea1ea538212b9e0 data/khm/loot_tables/blocks/mars_coal_ore.json
@@ -13,3 +13,5 @@ a4a2d482f64b9dc3fc0ea7edc0d78b4089b7006a data/khm/loot_tables/blocks/moon_coal_o
 6c2efff5145263291f7837e91cf93443fe54ea03 data/khm/loot_tables/blocks/moon_copper_ore.json
 6008601f9930a2a596b0498218179ef16113ff41 data/khm/loot_tables/blocks/moon_lapis_ore.json
 a0bc4d6ea9aa274638ec7ef7f8a7b5c5772d8031 data/khm/loot_tables/blocks/moon_quartz_ore.json
+7a67fee024f92c4825207c8feadc1f3d5b44f18e data/khm/loot_tables/blocks/venus_quartz_ore.json
+f4a79f7c06e151af530a5acf2fb0dc8f1f8a21fc data/khm/loot_tables/blocks/venus_redstone_ore.json

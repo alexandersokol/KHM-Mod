@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-30T23:56:31.737831	Block States: khm
+// 1.20.1	2025-07-01T00:05:05.131703	Block States: khm
 bdcf53f87183e7124ead635273d670dc957442ca assets/khm/blockstates/elevator.json
 0590cc87c19308879395902b14f8862ed3611f22 assets/khm/blockstates/mars_ancient_debris.json
 679f1254dc8ac8e37c895d1ea797835fdf4a83af assets/khm/blockstates/mars_coal_ore.json
@@ -13,6 +13,8 @@ c4f0f6f222810a1b93e2af3e35bcf37916dfb089 assets/khm/blockstates/moon_coal_ore.js
 250be9dffd4810ae5447f5e285ca7812dc0e841e assets/khm/blockstates/moon_copper_ore.json
 250e2313c2a9186a362c84ac1301b94489592318 assets/khm/blockstates/moon_lapis_ore.json
 a2dc85f701c8b18b53ffd17ff6c0bdb2810580b9 assets/khm/blockstates/moon_quartz_ore.json
+ccf0bf24f28b8f774bebe863b5a8b85fea496308 assets/khm/blockstates/venus_quartz_ore.json
+c20967fc4854a9d4fb5637462282e3de5a8ed0d0 assets/khm/blockstates/venus_redstone_ore.json
 38a6c604f87870da9c2ddc81e47308acff4cce3a assets/khm/models/block/elevator.json
 6ab903fd833fb93983d737813846d5f6cc41518a assets/khm/models/block/mars_ancient_debris.json
 03c6d25a3a74f03e7184f2954350e74c3e06cab1 assets/khm/models/block/mars_coal_ore.json
@@ -27,6 +29,8 @@ ddb981422579f055feadee2f654781a71cd10445 assets/khm/models/block/mercury_redston
 9777ebac3201b0901c3bc4a6cfed7e9444536945 assets/khm/models/block/moon_copper_ore.json
 277d98d2d4b5606a9f9f79fa92314fc551963ff5 assets/khm/models/block/moon_lapis_ore.json
 baeaa5bf736a64fd3d87d471efc5567d176626c2 assets/khm/models/block/moon_quartz_ore.json
+0a1071b07f8ac30f1919f98ce73cfdd599e79308 assets/khm/models/block/venus_quartz_ore.json
+26346eeca503fdf20f697133aaf6f4a81508178a assets/khm/models/block/venus_redstone_ore.json
 7104ad44eefe812faba4b06b61e10cf631eae040 assets/khm/models/item/elevator.json
 89121a769c363d0801e9f9f5b7f5ac694437669a assets/khm/models/item/mars_ancient_debris.json
 43b68c67840c22c2f78960de81a2408344c73f2d assets/khm/models/item/mars_coal_ore.json
@@ -41,3 +45,5 @@ eebc5edd6f2d39c1882a2645d456ef0a207c51b6 assets/khm/models/item/mercury_copper_o
 a8fe17104f26fecdf93e9dcff1194f088f3b42e1 assets/khm/models/item/moon_copper_ore.json
 854b1dc900cf92b2baf0c900dc161e54a38e0dc7 assets/khm/models/item/moon_lapis_ore.json
 ee4cd23ab3afe651770d93a62c567eee59f889b3 assets/khm/models/item/moon_quartz_ore.json
+4aa39750bcad9cabbb0d7c7089bffad67bcc5388 assets/khm/models/item/venus_quartz_ore.json
+6c3cf227015653b437fd9bcc97cd0181c68f44da assets/khm/models/item/venus_redstone_ore.json

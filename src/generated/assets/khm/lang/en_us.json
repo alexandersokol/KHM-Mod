@@ -13,6 +13,8 @@
   "block.khm.moon_copper_ore": "Moon Copper Ore",
   "block.khm.moon_lapis_ore": "Moon Lapis Ore",
   "block.khm.moon_quartz_ore": "Moon Quartz Ore",
+  "block.khm.venus_quartz_ore": "Venus Quartz Ore",
+  "block.khm.venus_redstone_ore": "Venus Redstone Ore",
   "item.khm.elevator": "Елеватор",
   "item.khm.khm_painting": "KHM Картина",
   "itemGroup.khm": "KHM Mod"
