@@ -1,6 +1,7 @@
 package khm.apocalypse.mod.data
 
 import khm.apocalypse.mod.ModBlocks
+import khm.apocalypse.mod.ModItems
 import net.minecraft.data.loot.BlockLootSubProvider
 import net.minecraft.world.flag.FeatureFlags
 import net.minecraft.world.item.Item
@@ -13,6 +14,8 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator
 class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGISTRY.allFlags()) {
 
     override fun generate() {
+        add(ModBlocks.ELEVATOR.get(), ModItems.ELEVATOR.get(), 1, 1)
+
         add(ModBlocks.MOON_QUARTZ_ORE.get(), Items.QUARTZ, 2, 4)
         add(ModBlocks.MOON_COAL_ORE.get(), Items.COAL, 3, 6)
         add(ModBlocks.MOON_LAPIS_ORE.get(), Items.LAPIS_LAZULI, 1, 2)
@@ -24,10 +27,12 @@ class ModBlockLootSubProvider : BlockLootSubProvider(setOf(), FeatureFlags.REGIS
         add(ModBlocks.MARS_ANCIENT_DEBRIS.get(), Items.ANCIENT_DEBRIS, 1, 1)
 
         add(ModBlocks.MERCURY_REDSTONE_ORE.get(), Items.REDSTONE, 4, 8)
+        add(ModBlocks.MERCURY_LAPIS_ORE.get(), Items.LAPIS_LAZULI, 1, 4)
     }
 
     override fun getKnownBlocks(): Iterable<Block?> {
-        return ModBlocks.BLOCKS.entries.map { it.get() }
+        val blocks = ModBlocks.OTHER_BLOCKS.entries + ModBlocks.BLOCKS.entries
+        return blocks.map { it.get() }
     }
 
     private fun add(block: Block, item: Item, min: Int, max: Int) {

@@ -14,9 +14,10 @@ class ModBlockStateProvider(output: PackOutput, exFileHelper: ExistingFileHelper
     BlockStateProvider(output, ForgeMod.MOD_ID, exFileHelper) {
 
     override fun registerStatesAndModels() {
-        ModBlocks.BLOCKS.getEntries().forEach { v ->
+        val blocks = ModBlocks.BLOCKS.entries + ModBlocks.OTHER_BLOCKS.entries
+        blocks.forEach { v ->
             when (v.id.path) {
-                ModBlocks.MARS_ANCIENT_DEBRIS.id.path -> {
+                ModBlocks.MARS_ANCIENT_DEBRIS.id.path, ModBlocks.ELEVATOR.id.path -> {
                     basicCubeColumn(v.get())
                 }
 

@@ -5,14 +5,14 @@
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "ad_astra:moon_stone"
+          "block": "ad_astra:mercury_stone"
         },
         "state": {
-          "Name": "khm:moon_coal_ore"
+          "Name": "khm:mercury_lapis_ore"
         }
       }
     ],
-    "size": 6,
+    "size": 8,
     "discard_chance_on_air_exposure": 0.0
   }
 }

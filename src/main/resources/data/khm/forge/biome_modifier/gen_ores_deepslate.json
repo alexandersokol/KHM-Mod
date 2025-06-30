@@ -10,7 +10,8 @@
     "khm:mars_gold_ore_normal",
     "khm:mars_redstone_ore_normal",
     "khm:mars_ancient_debris_normal",
-    "khm:mercury_redstone_ore_normal"
+    "khm:mercury_redstone_ore_normal",
+    "khm:mercury_lapis_ore_normal"
   ],
   "step": "underground_ores"
 }

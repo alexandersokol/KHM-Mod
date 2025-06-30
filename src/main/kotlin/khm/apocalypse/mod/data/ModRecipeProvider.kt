@@ -22,5 +22,16 @@ class ModRecipeProvider(output: PackOutput) : RecipeProvider(output) {
             .pattern("S#S")
             .unlockedBy("has_paper", has(Items.PAPER))
             .save(consumer)
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ELEVATOR.get(), 1)
+            .define('I', Items.IRON_BLOCK)
+            .define('E', Items.ENDER_PEARL)
+            .define('L', Items.LAPIS_LAZULI)
+            .define('R', Items.REDSTONE)
+            .pattern("LEL")
+            .pattern("RIR")
+            .pattern("LEL")
+            .unlockedBy("has_ender_pearl", has(Items.ENDER_PEARL))
+            .save(consumer)
     }
 }

@@ -42,15 +42,19 @@ object ModLanguageProviders {
 
                     val path = blockRegObj.id.path
                     val oreName = when {
-                        "quartz" in path -> "Кварцева"
-                        "coal" in path -> "Вугільна"
-                        "lapis" in path -> "Лазуритова"
-                        "copper" in path -> "Мідна"
+                        "quartz" in path -> "кварцева руда"
+                        "coal" in path -> "вугільна руда"
+                        "lapis" in path -> "лазуритова руда"
+                        "copper" in path -> "мідна руда"
+                        "gold" in path -> "золота руда"
+                        "diamond" in path -> "діамантова руда"
+                        "ancient" in path -> "стародавня руда"
+                        "redstone" in path -> "редстоун руда"
                         else -> null
                     }
 
                     oreName?.let {
-                        lang.add(blockRegObj.get(), "$planet $oreName руда")
+                        lang.add(blockRegObj.get(), "$planet $oreName")
                     }
                 }
             }
@@ -68,6 +72,8 @@ object ModLanguageProviders {
                 // mod name is english only.
                 add("itemGroup.khm", ForgeMod.MOD_NAME)
                 add("item.khm.khm_painting", "KHM Картина")
+                add("block.khm.elevator", "Елеватор")
+                add("item.khm.elevator", "Елеватор")
 
                 genLocale.invoke(this)
             }

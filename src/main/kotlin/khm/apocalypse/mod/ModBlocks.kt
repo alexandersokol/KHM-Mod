@@ -16,6 +16,10 @@ import java.util.function.Supplier
 object ModBlocks {
 
     val BLOCKS: DeferredRegister<Block> = DeferredRegister.create(ForgeRegistries.BLOCKS, ForgeMod.MOD_ID)
+    val OTHER_BLOCKS: DeferredRegister<Block> = DeferredRegister.create(ForgeRegistries.BLOCKS, ForgeMod.MOD_ID)
+
+    val ELEVATOR =
+        OTHER_BLOCKS.register("elevator", Supplier { Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)) })
 
     val MOON_QUARTZ_ORE = register("moon_quartz_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_QUARTZ_ORE), UniformInt.of(2, 5))
@@ -43,6 +47,9 @@ object ModBlocks {
     }
     val MERCURY_REDSTONE_ORE = register("mercury_redstone_ore") {
         RedStoneOreBlock(BlockBehaviour.Properties.copy(Blocks.REDSTONE_ORE))
+    }
+    val MERCURY_LAPIS_ORE = register("mercury_lapis_ore") {
+        DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE), UniformInt.of(4, 8))
     }
 
     private fun register(name: String, supplier: () -> Block): RegistryObject<Block> {

@@ -1,9 +1,14 @@
 {
-  "block.khm.mars_coal_ore": "Марсова Вугільна руда",
-  "block.khm.moon_coal_ore": "Місячна Вугільна руда",
-  "block.khm.moon_copper_ore": "Місячна Мідна руда",
-  "block.khm.moon_lapis_ore": "Місячна Лазуритова руда",
-  "block.khm.moon_quartz_ore": "Місячна Кварцева руда",
+  "block.khm.elevator": "Елеватор",
+  "block.khm.mars_ancient_debris": "Марсова стародавні уламки",
+  "block.khm.mars_coal_ore": "Марсова вугільна руда",
+  "block.khm.mars_gold_ore": "Марсова золота руда",
+  "block.khm.mercury_lapis_ore": "Меркурієва лазуритова руда",
+  "block.khm.moon_coal_ore": "Місячна вугільна руда",
+  "block.khm.moon_copper_ore": "Місячна мідна руда",
+  "block.khm.moon_lapis_ore": "Місячна лазуритова руда",
+  "block.khm.moon_quartz_ore": "Місячна кварцева руда",
+  "item.khm.elevator": "Елеватор",
   "item.khm.khm_painting": "KHM Картина",
   "itemGroup.khm": "KHM Mod"
 }

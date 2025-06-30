@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "khm:block/elevator_top",
+    "side": "khm:block/elevator"
+  }
+}

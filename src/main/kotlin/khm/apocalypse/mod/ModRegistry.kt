@@ -33,6 +33,7 @@ object ModRegistry {
         }
 
         ModBlocks.BLOCKS.register(bus)
+        ModBlocks.OTHER_BLOCKS.register(bus)
         ModItems.BLOCK_ITEMS.register(bus)
         ModItems.ITEMS.register(bus)
         ModPaintingVariants.register(bus)
