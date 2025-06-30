@@ -1,10 +1,10 @@
-// 1.20.1	2025-06-30T20:27:38.925521	Tags for minecraft:block mod id khm
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/forge/tags/blocks/mineable/paxel.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/forge/tags/blocks/ore_rates/singular.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/forge/tags/blocks/ores.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/forge/tags/blocks/ores_in_ground/moon_stone.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/mekanism/tags/blocks/atomic_disassembler_ore.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/minecraft/tags/blocks/mineable/pickaxe.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/minecraft/tags/blocks/needs_stone_tool.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/minecraft/tags/blocks/overworld_carver_replaceables.json
-ac38083cdefdd0e931c49fc268b98940f9c1bc4e data/minecraft/tags/blocks/snaps_goat_horn.json
+// 1.20.1	2025-06-30T20:35:42.771518	Tags for minecraft:block mod id khm
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/mineable/paxel.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/ore_rates/singular.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/ores.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/ores_in_ground/moon_stone.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/mekanism/tags/blocks/atomic_disassembler_ore.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/minecraft/tags/blocks/mineable/pickaxe.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/minecraft/tags/blocks/needs_stone_tool.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/minecraft/tags/blocks/overworld_carver_replaceables.json
+64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/minecraft/tags/blocks/snaps_goat_horn.json

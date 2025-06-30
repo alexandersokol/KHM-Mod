@@ -2,9 +2,10 @@
   "type": "forge:add_features",
   "biomes": "#khm:gen_ores_deepslate",
   "features": [
-    "khm:moon_quartz_ore_normal",
     "khm:moon_coal_ore_normal",
-    "khm:moon_lapis_ore_normal"
+    "khm:moon_lapis_ore_normal",
+    "khm:moon_quartz_ore_normal",
+    "khm:moon_copper_ore_normal"
   ],
   "step": "underground_ores"
 }
