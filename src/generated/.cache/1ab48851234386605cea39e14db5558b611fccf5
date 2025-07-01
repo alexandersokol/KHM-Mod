@@ -1,14 +1,14 @@
-// 1.20.1	2025-07-01T01:56:52.688584	Tags for minecraft:block mod id khm
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/forge/tags/blocks/mineable/paxel.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/forge/tags/blocks/ore_rates/singular.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/forge/tags/blocks/ores.json
+// 1.20.1	2025-07-01T12:36:23.743214	Tags for minecraft:block mod id khm
+d76d30c52fc2aad0c219c77c578eefedc342547d data/forge/tags/blocks/mineable/paxel.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/forge/tags/blocks/ore_rates/singular.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/forge/tags/blocks/ores.json
 695fbcf34d732bad29fa1c29373cf33b4c11ae87 data/forge/tags/blocks/ores_in_ground/glacio_stone.json
 3134a4091ded6e5f2b4e7b62a46260bd2e0cbb4a data/forge/tags/blocks/ores_in_ground/mars_stone.json
-b5584386dcac3fbf5268d3d28f7b34e817e17895 data/forge/tags/blocks/ores_in_ground/mercury_stone.json
+276a1f6b29dc5c36bd2d5b72650d41b37419edf2 data/forge/tags/blocks/ores_in_ground/mercury_stone.json
 64ebfb7609502b7caf1c3bc0dabaf32f0b1a1836 data/forge/tags/blocks/ores_in_ground/moon_stone.json
 33797cf950c9bcca5d9ddff20aa853736a8bc74f data/forge/tags/blocks/ores_in_ground/venus_stone.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/mekanism/tags/blocks/atomic_disassembler_ore.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/minecraft/tags/blocks/mineable/pickaxe.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/minecraft/tags/blocks/needs_stone_tool.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/minecraft/tags/blocks/overworld_carver_replaceables.json
-a160d554ceea1b31a667e98d19308084e4f5c3ce data/minecraft/tags/blocks/snaps_goat_horn.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/mekanism/tags/blocks/atomic_disassembler_ore.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/minecraft/tags/blocks/mineable/pickaxe.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/minecraft/tags/blocks/needs_stone_tool.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/minecraft/tags/blocks/overworld_carver_replaceables.json
+d76d30c52fc2aad0c219c77c578eefedc342547d data/minecraft/tags/blocks/snaps_goat_horn.json

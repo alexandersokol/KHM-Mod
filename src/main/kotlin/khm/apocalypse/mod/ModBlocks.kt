@@ -54,6 +54,9 @@ object ModBlocks {
     val MERCURY_COPPER_ORE = register("mercury_copper_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.COPPER_ORE), UniformInt.of(2, 4))
     }
+    val MERCURY_DIAMOND_ORE = register("mercury_diamond_ore") {
+        DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(4, 10))
+    }
     val MERCURY_BASALT_DIAMOND_ORE = register("mercury_basalt_diamond_ore") {
         DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE), UniformInt.of(4, 10))
     }

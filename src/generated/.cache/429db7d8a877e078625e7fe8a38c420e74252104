@@ -1,4 +1,4 @@
-// 1.20.1	2025-07-01T01:56:52.687665	Block States: khm
+// 1.20.1	2025-07-01T12:36:23.742107	Block States: khm
 bdcf53f87183e7124ead635273d670dc957442ca assets/khm/blockstates/elevator.json
 2b075f934b096630560eea211ea945cc1e0b4c0e assets/khm/blockstates/glacio_deepslate_ancient_debris.json
 c51d5f26466246fa9d2433b8e1009c4c74a5f744 assets/khm/blockstates/glacio_deepslate_diamond_ore.json
@@ -15,6 +15,7 @@ aa9838410fde0c87587427c050374570e3f12d0b assets/khm/blockstates/mars_redstone_or
 03643878197c446ac669141a7d9f59583d37597e assets/khm/blockstates/mercury_basalt_diamond_ore.json
 dc5536c1765b824d02478863da7fe5d9a4db1de3 assets/khm/blockstates/mercury_blackstone_diamond_ore.json
 d30aa274a757f00cdddcbced89aa2803e4851094 assets/khm/blockstates/mercury_copper_ore.json
+04a2fa3fd416ed6342968d0a82e7774ca33f9f24 assets/khm/blockstates/mercury_diamond_ore.json
 0ac59a156c20f9c5e08c334c32cdaf78ca07bb16 assets/khm/blockstates/mercury_lapis_ore.json
 5364e1e74f8f8f0383708b2d73959012d1b1c435 assets/khm/blockstates/mercury_redstone_ore.json
 c4f0f6f222810a1b93e2af3e35bcf37916dfb089 assets/khm/blockstates/moon_coal_ore.json
@@ -39,6 +40,7 @@ e25876b2a97a6dfde2cf7b46a922e2b88e878847 assets/khm/models/block/glacio_redstone
 f4b20594a8f6e33c8d1fc3b8e0b62f26a83b74b2 assets/khm/models/block/mercury_basalt_diamond_ore.json
 d0b66d531ad94b7aa242854e5e1ed304f380f5f6 assets/khm/models/block/mercury_blackstone_diamond_ore.json
 9b3f3932309b14091da41de58a7062b40ae40cbe assets/khm/models/block/mercury_copper_ore.json
+0312f54a5f9b2a68df490658a143dadbfa2940b5 assets/khm/models/block/mercury_diamond_ore.json
 1cdf3b6eac9d60eef04f8081641b0736ec489a0b assets/khm/models/block/mercury_lapis_ore.json
 ddb981422579f055feadee2f654781a71cd10445 assets/khm/models/block/mercury_redstone_ore.json
 31d437f4d05e4200d6b5be1a30bfbeed79a4b717 assets/khm/models/block/moon_coal_ore.json
@@ -63,6 +65,7 @@ b38bf0e9995a853126b76a9edfcae94eb434823e assets/khm/models/item/mars_gold_ore.js
 6657dd959f9d3693ac269f37e9ea4f8683a18723 assets/khm/models/item/mercury_basalt_diamond_ore.json
 1ed82ea74c9c77619ebb82d58bb4b0224cfed651 assets/khm/models/item/mercury_blackstone_diamond_ore.json
 eebc5edd6f2d39c1882a2645d456ef0a207c51b6 assets/khm/models/item/mercury_copper_ore.json
+8c08c995f6ff4688147d4ace5d48e37f10e571ed assets/khm/models/item/mercury_diamond_ore.json
 2e02790cc5742681cbe82a5253e86667a7f9f76c assets/khm/models/item/mercury_lapis_ore.json
 83b18fe1d0c24b9a246660f79cbe6a7429085f71 assets/khm/models/item/mercury_redstone_ore.json
 9abbefe8e25a55a375f8d4ee142a338c60f7cf14 assets/khm/models/item/moon_coal_ore.json

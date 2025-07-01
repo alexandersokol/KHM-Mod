@@ -5,14 +5,14 @@
       {
         "target": {
           "predicate_type": "minecraft:block_match",
-          "block": "minecraft:blackstone"
+          "block": "ad_astra:mercury_stone"
         },
         "state": {
-          "Name": "khm:mercury_blackstone_diamond_ore"
+          "Name": "khm:mercury_diamond_ore"
         }
       }
     ],
-    "size": 8,
+    "size": 6,
     "discard_chance_on_air_exposure": 0.0
   }
 }

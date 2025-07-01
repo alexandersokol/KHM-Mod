@@ -24,7 +24,7 @@
                   }
                 }
               ],
-              "name": "khm:mercury_basalt_diamond_ore"
+              "name": "khm:mercury_diamond_ore"
             },
             {
               "type": "minecraft:item",
@@ -33,7 +33,7 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 3.0,
+                    "max": 2.0,
                     "min": 1.0
                   },
                   "function": "minecraft:set_count"
@@ -50,5 +50,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "khm:blocks/mercury_basalt_diamond_ore"
+  "random_sequence": "khm:blocks/mercury_diamond_ore"
 }
