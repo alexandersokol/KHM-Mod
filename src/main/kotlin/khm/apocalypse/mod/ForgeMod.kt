@@ -16,6 +16,7 @@ class ForgeMod {
         MinecraftForge.EVENT_BUS.register(ModRegistry::class.java)
 
         ModRegistry.register(modEventBus)
+        MinecraftForge.EVENT_BUS.addListener(CommandRegistry::onRegisterCommands)
     }
 
     companion object {
