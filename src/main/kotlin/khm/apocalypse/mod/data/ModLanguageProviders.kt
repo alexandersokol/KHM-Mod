@@ -9,12 +9,6 @@ import net.minecraftforge.registries.RegistryObject
 
 object ModLanguageProviders {
 
-    private const val MOON: String = "moon"
-    private const val MARS: String = "mars"
-    private const val MERCURY: String = "mercury"
-    private const val VENUS: String = "venus"
-    private const val GLACIO: String = "glacio"
-
     fun getLanguageProviders(packOutput: PackOutput): List<LanguageProvider?> {
         return SupportedLocales.entries.map { getLanguageProvider(packOutput, it) }
     }

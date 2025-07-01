@@ -3,6 +3,9 @@ package khm.apocalypse.mod.kubejs
 import com.jcraft.jsch.ChannelSftp
 import com.jcraft.jsch.JSch
 import com.jcraft.jsch.Session
+import khm.apocalypse.mod.ForgeMod
+import khm.apocalypse.mod.ModConfig
+import org.apache.logging.log4j.Level
 import java.io.FileOutputStream
 import java.nio.file.Files
 import java.nio.file.Path
@@ -10,7 +13,17 @@ import java.nio.file.Paths
 
 object KubeJSRemoteSyncer {
 
-    fun run() {
+    fun sync() {
+        if (ModConfig.syncKubeJsScripts) {
+            try {
+                run()
+            } catch (ex: Exception) {
+                ForgeMod.LOGGER.log(Level.DEBUG, "Failed to sync KubeJS scripts", ex)
+            }
+        }
+    }
+
+    private fun run() {
         val host = "wa3-perf.mineconnect.xyz"
         val port = 2221
         val username = "a2ory65v8b.5402a7c9"
@@ -43,8 +56,12 @@ object KubeJSRemoteSyncer {
         session.disconnect()
     }
 
-    fun syncDirectory(channel: ChannelSftp, remotePath: String, localPath: Path, remoteFiles: MutableSet<String>) {
-        println("cd $remotePath")
+    private fun syncDirectory(
+        channel: ChannelSftp,
+        remotePath: String,
+        localPath: Path,
+        remoteFiles: MutableSet<String>
+    ) {
         channel.cd(remotePath)
         Files.createDirectories(localPath)
 
@@ -63,12 +80,10 @@ object KubeJSRemoteSyncer {
             } else {
                 remoteFiles.add(localFilePath.toAbsolutePath().normalize().toString())
                 val localFile = localFilePath.toFile()
-                if (localFile.exists() && localFile.length() == lsEntry.attrs.size.toLong()) {
-                    println("Skipping $remoteFilePath (already up to date)")
+                if (localFile.exists() && localFile.length() == lsEntry.attrs.size) {
                     continue
                 }
 
-                println("Downloading $remoteFilePath")
                 FileOutputStream(localFile).use { output ->
                     channel.get(name, output)
                 }
@@ -76,12 +91,11 @@ object KubeJSRemoteSyncer {
         }
     }
 
-    fun cleanupLocal(localPath: Path, remoteFiles: Set<String>) {
+    private fun cleanupLocal(localPath: Path, remoteFiles: Set<String>) {
         Files.walk(localPath)
             .filter { Files.isRegularFile(it) }
             .forEach { path ->
                 if (path.toAbsolutePath().normalize().toString() !in remoteFiles) {
-                    println("Deleting stale file: $path")
                     Files.delete(path)
                 }
             }

@@ -1,5 +1,6 @@
 package khm.apocalypse.mod
 
+import khm.apocalypse.mod.kubejs.KubeJSRemoteSyncer
 import net.minecraftforge.common.MinecraftForge
 import net.minecraftforge.fml.common.Mod
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext
@@ -14,6 +15,7 @@ class ForgeMod {
         val modEventBus = FMLJavaModLoadingContext.get().modEventBus
 
         ModConfig.load()
+        KubeJSRemoteSyncer.sync()
 
         MinecraftForge.EVENT_BUS.register(ModRegistry::class.java)
         ModRegistry.register(modEventBus)
