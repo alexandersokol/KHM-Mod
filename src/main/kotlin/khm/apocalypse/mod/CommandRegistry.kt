@@ -23,9 +23,9 @@ object CommandRegistry {
                     if (!player.hasPermissions(2)) {
                         // not OP → request delayed teleport
                         if (DelayedTeleportHandler.isTeleporting(player)) {
-                            player.sendSystemMessage(Component.literal("Already preparing teleport..."))
+                            player.sendSystemMessage(Component.literal("Ти вже очікуєш телепорт..."))
                         } else {
-                            DelayedTeleportHandler.requestTeleport(player)
+                            DelayedTeleportHandler.requestTeleportToSpawn(player)
                         }
                         Command.SINGLE_SUCCESS
                     } else {
@@ -88,6 +88,23 @@ object CommandRegistry {
                             1
                         }
                 )
+        )
+
+        event.dispatcher.register(
+            Commands.literal("home")
+                .requires { true } // Available to all players
+                .executes { context ->
+                    val player = context.source.playerOrException
+                    val bedPos = player.respawnPosition
+
+                    if (bedPos == null) {
+                        player.sendSystemMessage(Component.literal("§c⚠ Точку відродження (ліжко) не встановлено!"))
+                        return@executes 0
+                    }
+
+                    DelayedTeleportHandler.requestTeleportToBed(player)
+                    1
+                }
         )
     }
 

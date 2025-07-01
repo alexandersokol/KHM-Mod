@@ -13,8 +13,9 @@ class ForgeMod {
     init {
         val modEventBus = FMLJavaModLoadingContext.get().modEventBus
 
-        MinecraftForge.EVENT_BUS.register(ModRegistry::class.java)
+        ModConfig.load()
 
+        MinecraftForge.EVENT_BUS.register(ModRegistry::class.java)
         ModRegistry.register(modEventBus)
         MinecraftForge.EVENT_BUS.addListener(CommandRegistry::onRegisterCommands)
     }
