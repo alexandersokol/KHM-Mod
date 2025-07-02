@@ -1,6 +1,7 @@
 package khm.apocalypse.mod.spawn
 
 import khm.apocalypse.mod.ForgeMod
+import net.minecraft.nbt.CompoundTag
 import net.minecraft.server.level.ServerPlayer
 import net.minecraftforge.event.TickEvent
 import net.minecraftforge.event.entity.player.PlayerEvent
@@ -9,6 +10,8 @@ import net.minecraftforge.fml.common.Mod
 
 @Mod.EventBusSubscriber(modid = ForgeMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 object PlayerSpawnHandler {
+
+    private const val TAG_FIRST_JOINED = "khm_has_joined_before"
 
     @SubscribeEvent
     @JvmStatic
@@ -21,8 +24,14 @@ object PlayerSpawnHandler {
     @SubscribeEvent
     @JvmStatic
     fun onPlayerLogin(event: PlayerEvent.PlayerLoggedInEvent) {
-        if (!event.entity.level().isClientSide) {
-            teleportToRandomSpawn(event.entity as ServerPlayer)
+        val player = event.entity as? ServerPlayer ?: return
+        if (player.level().isClientSide) return
+
+        val data: CompoundTag = player.persistentData
+
+        if (!data.getBoolean(TAG_FIRST_JOINED)) {
+            teleportToRandomSpawn(player)
+            data.putBoolean(TAG_FIRST_JOINED, true)
         }
     }
 

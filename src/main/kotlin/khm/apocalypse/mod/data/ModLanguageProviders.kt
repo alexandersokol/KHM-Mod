@@ -73,6 +73,7 @@ object ModLanguageProviders {
                 add("item.khm.khm_painting", "KHM Картина")
                 add("block.khm.elevator", "Елеватор")
                 add("item.khm.elevator", "Елеватор")
+                add("item.khm.we_tool", "WorldEdit Tool")
 
                 genLocale.invoke(this)
             }

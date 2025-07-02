@@ -13,5 +13,6 @@ class ModItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
         // All items have the same model as blocks
 
         basicItem(ModItems.KHM_PAINTING.get())
+        basicItem(ModItems.WE_TOOL.get())
     }
 }

@@ -13,6 +13,6 @@ object ModItems {
     val ITEMS: DeferredRegister<Item> = DeferredRegister.create(ForgeRegistries.ITEMS, ForgeMod.MOD_ID)
 
     val KHM_PAINTING = ITEMS.register("khm_painting") { KHMPaintingItem(Item.Properties()) }
+    val WE_TOOL = ITEMS.register("we_tool") { Item(Item.Properties()) }
     val ELEVATOR = ITEMS.register("elevator", Supplier { BlockItem(ModBlocks.ELEVATOR.get(), Item.Properties()) })
-
 }
