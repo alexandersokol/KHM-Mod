@@ -106,6 +106,18 @@ object CommandRegistry {
                     1
                 }
         )
+
+        event.dispatcher.register(
+            Commands.literal("moditems")
+                .then(
+                    Commands.argument("modid", StringArgumentType.word())
+                        .executes { ctx ->
+                            val modid = StringArgumentType.getString(ctx, "modid")
+                            dumpModItems(ctx.source, modid)
+                            Command.SINGLE_SUCCESS
+                        }
+                )
+        )
     }
 
 }
