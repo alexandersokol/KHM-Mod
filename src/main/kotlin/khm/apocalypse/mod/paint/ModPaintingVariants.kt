@@ -15,6 +15,9 @@ object ModPaintingVariants {
     val KHM_FAMQ = PAINTING_VARIANTS.register("khm_famq") { PaintingVariant(32, 16) }
     val GALAXY = PAINTING_VARIANTS.register("galaxy") { PaintingVariant(64, 48) }
     val CREEPER = PAINTING_VARIANTS.register("creeper") { PaintingVariant(16, 32) }
+    val ZOMBIE = PAINTING_VARIANTS.register("zombie") { PaintingVariant(32, 48) }
+    val ARTEM_1 = PAINTING_VARIANTS.register("artem_1") { PaintingVariant(48, 16) }
+    val ARTEM_2 = PAINTING_VARIANTS.register("artem_2") { PaintingVariant(32, 32) }
     val DIMA_1 = PAINTING_VARIANTS.register("dima_1") { PaintingVariant(32, 32) }
     val DIMA_2 = PAINTING_VARIANTS.register("dima_2") { PaintingVariant(32, 32) }
     val DIMA_3 = PAINTING_VARIANTS.register("dima_3") { PaintingVariant(16, 16) }
