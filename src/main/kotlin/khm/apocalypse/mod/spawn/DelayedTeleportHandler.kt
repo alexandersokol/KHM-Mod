@@ -4,6 +4,7 @@ import khm.apocalypse.mod.ModConfig
 import net.minecraft.core.BlockPos
 import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerPlayer
+import net.minecraft.world.level.Level
 import net.minecraft.world.phys.Vec3
 import java.util.*
 
@@ -91,7 +92,23 @@ object DelayedTeleportHandler {
 
         for (pending in toTeleport) {
             when (pending.type) {
-                DestinationType.SPAWN -> PlayerSpawnHandler.teleportToRandomSpawn(pending.player)
+                DestinationType.SPAWN -> {
+                    val overworld = pending.player.server.getLevel(Level.OVERWORLD)
+                    val spawnPos = overworld?.sharedSpawnPos ?: BlockPos(0, 100, 0)
+                    if (overworld != null) {
+                        pending.player.teleportTo(
+                            overworld,
+                            spawnPos.x + 0.5,
+                            spawnPos.y + 0.1,
+                            spawnPos.z + 0.5,
+                            pending.player.yRot,
+                            pending.player.xRot
+                        )
+                        pending.player.sendSystemMessage(
+                            Component.literal("Тебе телепортовано на спавн.").withStyle { it.withColor(0x0ba300) })
+                    }
+                }
+
                 DestinationType.BED -> {
                     val bedPos: BlockPos? = pending.player.respawnPosition
                     val bedWorld = pending.player.server.getLevel(pending.player.respawnDimension)

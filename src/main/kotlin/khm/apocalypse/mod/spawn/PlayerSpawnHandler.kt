@@ -1,8 +1,11 @@
 package khm.apocalypse.mod.spawn
 
 import khm.apocalypse.mod.ForgeMod
+import net.minecraft.core.BlockPos
 import net.minecraft.nbt.CompoundTag
+import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerPlayer
+import net.minecraft.world.level.Level
 import net.minecraftforge.event.TickEvent
 import net.minecraftforge.event.entity.player.PlayerEvent
 import net.minecraftforge.eventbus.api.SubscribeEvent
@@ -44,13 +47,28 @@ object PlayerSpawnHandler {
     }
 
     fun teleportToRandomSpawn(player: ServerPlayer) {
-        val spawns = SpawnStorage.load(player.server)
-        if (spawns.isNotEmpty()) {
-            val pos = spawns.values.random()
-            player.teleportTo(pos.x + 0.5, pos.y.toDouble(), pos.z + 0.5)
+        val overworld = player.server.getLevel(Level.OVERWORLD)
+        if (overworld != null) {
+            val spawns = SpawnStorage.load(player.server)
+            val pos = if (spawns.isNotEmpty()) {
+                spawns.values.random()
+            } else {
+                BlockPos(0, 120, 0) // Fallback
+            }
+
+            player.teleportTo(
+                overworld,
+                pos.x + 0.5,
+                pos.y.toDouble(),
+                pos.z + 0.5,
+                player.yRot,
+                player.xRot
+            )
         } else {
-            // Fallback
-            player.teleportTo(0.5, 120.0, 0.5)
+            player.sendSystemMessage(
+                Component.literal("⚠ Неможливо телепортувати на спавн: Overworld не знайдено.")
+                    .withStyle { it.withColor(0xd40f22) }
+            )
         }
     }
 }
