@@ -20,7 +20,10 @@ object PlayerSpawnHandler {
     @JvmStatic
     fun onPlayerRespawn(event: PlayerEvent.PlayerRespawnEvent) {
         if (!event.entity.level().isClientSide) {
-            teleportToRandomSpawn(event.entity as ServerPlayer)
+            val player = event.entity as ServerPlayer
+            if (player.respawnPosition == null) {
+                teleportToRandomSpawn(player)
+            }
         }
     }
 

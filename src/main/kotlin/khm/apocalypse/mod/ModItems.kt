@@ -14,5 +14,6 @@ object ModItems {
 
     val KHM_PAINTING = ITEMS.register("khm_painting") { KHMPaintingItem(Item.Properties()) }
     val WE_TOOL = ITEMS.register("we_tool") { Item(Item.Properties()) }
+    val FLAN_TOOL = ITEMS.register("flan_tool") { Item(Item.Properties()) }
     val ELEVATOR = ITEMS.register("elevator", Supplier { BlockItem(ModBlocks.ELEVATOR.get(), Item.Properties()) })
 }

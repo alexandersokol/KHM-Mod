@@ -14,5 +14,6 @@ class ModItemModelProvider(output: PackOutput, existingFileHelper: ExistingFileH
 
         basicItem(ModItems.KHM_PAINTING.get())
         basicItem(ModItems.WE_TOOL.get())
+        basicItem(ModItems.FLAN_TOOL.get())
     }
 }

@@ -16,6 +16,15 @@ object ModPaintingVariants {
     val GALAXY = PAINTING_VARIANTS.register("galaxy") { PaintingVariant(64, 48) }
     val CREEPER = PAINTING_VARIANTS.register("creeper") { PaintingVariant(16, 32) }
     val ZOMBIE = PAINTING_VARIANTS.register("zombie") { PaintingVariant(32, 48) }
+    val BEACH = PAINTING_VARIANTS.register("beach") { PaintingVariant(16, 16) }
+    val HOUSE = PAINTING_VARIANTS.register("house") { PaintingVariant(32, 32) }
+    val KHM_LOGO = PAINTING_VARIANTS.register("khm_logo") { PaintingVariant(32, 32) }
+    val ROCKET = PAINTING_VARIANTS.register("rocket") { PaintingVariant(16, 16) }
+    val PLAINS = PAINTING_VARIANTS.register("plains") { PaintingVariant(32, 16) }
+    val CLOUDS = PAINTING_VARIANTS.register("clouds") { PaintingVariant(32, 16) }
+    val PINK_CLOUDS = PAINTING_VARIANTS.register("pink_clouds") { PaintingVariant(32, 32) }
+    val CAT = PAINTING_VARIANTS.register("cat") { PaintingVariant(16, 16) }
+    val MOUSE = PAINTING_VARIANTS.register("mouse") { PaintingVariant(32, 16) }
     val ARTEM_1 = PAINTING_VARIANTS.register("artem_1") { PaintingVariant(48, 16) }
     val ARTEM_2 = PAINTING_VARIANTS.register("artem_2") { PaintingVariant(32, 32) }
     val DIMA_1 = PAINTING_VARIANTS.register("dima_1") { PaintingVariant(32, 32) }

@@ -74,6 +74,7 @@ object ModLanguageProviders {
                 add("block.khm.elevator", "Елеватор")
                 add("item.khm.elevator", "Елеватор")
                 add("item.khm.we_tool", "WorldEdit Tool")
+                add("item.khm.flan_tool", "Flan Tool")
 
                 genLocale.invoke(this)
             }
