@@ -34,10 +34,10 @@ object PlayerSpawnHandler {
         if (player.level().isClientSide) return
 
         val data: CompoundTag = player.persistentData
-
-        if (!data.getBoolean(TAG_FIRST_JOINED)) {
+        if (PlayerJoinStorage.isFirstJoin(player) || !data.getBoolean(TAG_FIRST_JOINED)) {
             teleportToRandomSpawn(player)
             data.putBoolean(TAG_FIRST_JOINED, true)
+            PlayerJoinStorage.save(player)
         }
     }
 
