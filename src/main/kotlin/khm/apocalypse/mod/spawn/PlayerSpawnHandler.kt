@@ -67,6 +67,8 @@ object PlayerSpawnHandler {
                 player.yRot,
                 player.xRot
             )
+            player.sendSystemMessage(
+                Component.literal("Тебе телепортовано на спавн.").withStyle { it.withColor(0x0ba300) })
         } else {
             player.sendSystemMessage(
                 Component.literal("⚠ Неможливо телепортувати на спавн: Overworld не знайдено.")
