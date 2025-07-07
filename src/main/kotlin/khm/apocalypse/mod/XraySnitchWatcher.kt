@@ -28,11 +28,6 @@ object XraySnitchWatcher {
         tickCounter++
         if (tickCounter >= CHECK_INTERVAL_TICKS) {
             tickCounter = 0
-
-            ForgeMod.LOGGER.error("Running xray scan!")
-            event.server.playerList.players.forEach {
-                ForgeMod.LOGGER.error("Player uuid: ${it.uuid}")
-            }
             runScan(event.server)
         }
     }
