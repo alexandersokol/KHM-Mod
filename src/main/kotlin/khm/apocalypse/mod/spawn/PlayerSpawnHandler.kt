@@ -22,6 +22,7 @@ object PlayerSpawnHandler {
         if (!event.entity.level().isClientSide) {
             val player = event.entity as ServerPlayer
             if (player.respawnPosition == null) {
+                ForgeMod.LOGGER.warn("RESPAWN: ${player.name.string}.")
                 teleportToRandomSpawn(player)
             }
         }
@@ -32,9 +33,15 @@ object PlayerSpawnHandler {
     fun onPlayerLogin(event: PlayerEvent.PlayerLoggedInEvent) {
         val player = event.entity as? ServerPlayer ?: return
         if (player.level().isClientSide) return
+        ForgeMod.LOGGER.warn("LOGIN: ${player.name.string}")
 
         val data: CompoundTag = player.persistentData
         if (PlayerJoinStorage.isFirstJoin(player) || !data.getBoolean(TAG_FIRST_JOINED)) {
+            ForgeMod.LOGGER.warn(
+                "LOGIN TELEPORT: ${player.name.string} " +
+                        "PlayerJoinStorage.isFirstJoin=${PlayerJoinStorage.isFirstJoin(player)} " +
+                        "!data.getBoolean(TAG_FIRST_JOINED)=${!data.getBoolean(TAG_FIRST_JOINED)}"
+            )
             teleportToRandomSpawn(player)
             data.putBoolean(TAG_FIRST_JOINED, true)
             PlayerJoinStorage.save(player)
@@ -67,9 +74,11 @@ object PlayerSpawnHandler {
                 player.yRot,
                 player.xRot
             )
+            ForgeMod.LOGGER.warn("Teleport to spawn: ${player.name.string}")
             player.sendSystemMessage(
                 Component.literal("Тебе телепортовано на спавн.").withStyle { it.withColor(0x0ba300) })
         } else {
+            ForgeMod.LOGGER.warn("Failed to teleport to spawn: ${player.name.string}")
             player.sendSystemMessage(
                 Component.literal("⚠ Неможливо телепортувати на спавн: Overworld не знайдено.")
                     .withStyle { it.withColor(0xd40f22) }

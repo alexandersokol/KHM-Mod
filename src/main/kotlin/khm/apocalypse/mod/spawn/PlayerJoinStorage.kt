@@ -13,16 +13,16 @@ object PlayerJoinStorage {
 
     fun save(player: ServerPlayer) {
         val list = load(player.server).toMutableList()
-        list.add(player.uuid.toString())
+        list.add(player.name.string)
 
         val path = getPath(player.server)
         Files.createDirectories(path.parent)
-        Files.write(path, gson.toJson(list).toByteArray())
+        Files.write(path, gson.toJson(list.toSet()).toByteArray())
     }
 
     fun isFirstJoin(player: ServerPlayer): Boolean {
         val list = load(player.server)
-        return list.contains(player.uuid.toString()).not()
+        return list.contains(player.name.string).not()
     }
 
     fun load(server: MinecraftServer): List<String> {

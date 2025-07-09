@@ -67,3 +67,7 @@ fun dumpModItems(source: CommandSourceStack, modid: String) {
         ForgeMod.LOGGER.error("Failed to write item list for modid '$modid'", e)
     }
 }
+
+fun warn(message: String) {
+    ForgeMod.LOGGER.warn("")
+}
