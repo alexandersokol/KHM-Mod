@@ -4,6 +4,9 @@ import khm.apocalypse.mod.ModConfig
 import net.minecraft.core.BlockPos
 import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerPlayer
+import net.minecraft.world.entity.LivingEntity
+import net.minecraft.world.entity.MobCategory
+import net.minecraft.world.phys.AABB
 import net.minecraft.world.phys.Vec3
 import java.util.*
 
@@ -23,6 +26,14 @@ object DelayedTeleportHandler {
                 Component.literal("❌ Телепорт на спавн вимкнено в конфігурації.").withStyle { it.withColor(0xd40f22) })
             return
         }
+
+        if (ModConfig.doHostileMobCheckBeforeTeleport && areThereHostileMobsAround(player)) {
+            player.sendSystemMessage(
+                Component.literal("⚠ Телепорт скасовано: поблизу є ворожі істоти!")
+                    .withStyle { it.withColor(0xf29c1e) })
+            return
+        }
+
         val delayTicks = ModConfig.teleportDelaySeconds * 20
         pendingTeleports[player.uuid] = PendingTeleport(player, delayTicks, DestinationType.SPAWN)
         lastPositions[player.uuid] = player.position()
@@ -37,6 +48,14 @@ object DelayedTeleportHandler {
                 Component.literal("❌ Телепорт додому вимкнено в конфігурації.").withStyle { it.withColor(0xd40f22) })
             return
         }
+
+        if (ModConfig.doHostileMobCheckBeforeTeleport && areThereHostileMobsAround(player)) {
+            player.sendSystemMessage(
+                Component.literal("⚠ Телепорт скасовано: поблизу є ворожі істоти!")
+                    .withStyle { it.withColor(0xf29c1e) })
+            return
+        }
+
         val bedPos = player.respawnPosition
         if (bedPos == null) {
             player.sendSystemMessage(
@@ -121,5 +140,14 @@ object DelayedTeleportHandler {
 
     fun isTeleporting(player: ServerPlayer): Boolean {
         return pendingTeleports.containsKey(player.uuid)
+    }
+
+    fun areThereHostileMobsAround(player: ServerPlayer): Boolean {
+        return player.level().getEntitiesOfClass(
+            LivingEntity::class.java,
+            AABB.ofSize(player.position(), 16.0, 6.0, 16.0)
+        ).any {
+            it.isAlive && it.type.category == MobCategory.MONSTER && it != player
+        }
     }
 }

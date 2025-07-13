@@ -2,7 +2,6 @@ package khm.apocalypse.mod.spawn
 
 import khm.apocalypse.mod.ForgeMod
 import net.minecraft.core.BlockPos
-import net.minecraft.nbt.CompoundTag
 import net.minecraft.network.chat.Component
 import net.minecraft.server.level.ServerPlayer
 import net.minecraft.world.level.Level
@@ -13,8 +12,6 @@ import net.minecraftforge.fml.common.Mod
 
 @Mod.EventBusSubscriber(modid = ForgeMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 object PlayerSpawnHandler {
-
-    private const val TAG_FIRST_JOINED = "khm_has_joined_before"
 
     @SubscribeEvent
     @JvmStatic
@@ -35,15 +32,12 @@ object PlayerSpawnHandler {
         if (player.level().isClientSide) return
         ForgeMod.LOGGER.warn("LOGIN: ${player.name.string}")
 
-        val data: CompoundTag = player.persistentData
-        if (PlayerJoinStorage.isFirstJoin(player) || !data.getBoolean(TAG_FIRST_JOINED)) {
+        if (PlayerJoinStorage.isFirstJoin(player)) {
             ForgeMod.LOGGER.warn(
                 "LOGIN TELEPORT: ${player.name.string} " +
-                        "PlayerJoinStorage.isFirstJoin=${PlayerJoinStorage.isFirstJoin(player)} " +
-                        "!data.getBoolean(TAG_FIRST_JOINED)=${!data.getBoolean(TAG_FIRST_JOINED)}"
+                        "PlayerJoinStorage.isFirstJoin=${PlayerJoinStorage.isFirstJoin(player)}"
             )
             teleportToRandomSpawn(player)
-            data.putBoolean(TAG_FIRST_JOINED, true)
             PlayerJoinStorage.save(player)
         }
     }

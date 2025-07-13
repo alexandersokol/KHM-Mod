@@ -23,11 +23,19 @@ object ModConfig {
     var syncKubeJsScripts: Boolean = true
         private set
 
+    var isDayLightCycleControlEnabled: Boolean = true
+        private set
+
+    var doHostileMobCheckBeforeTeleport: Boolean = true
+        private set
+
     private data class ConfigData(
         val isBedTeleportEnabled: Boolean = true,
         val isSpawnTeleportEnabled: Boolean = true,
         val teleportDelaySeconds: Int = 10,
-        val syncKubeJsScripts: Boolean = true
+        val syncKubeJsScripts: Boolean = true,
+        val isDayLightCycleControlEnabled: Boolean = true,
+        val doHostileMobCheckBeforeTeleport: Boolean = true
     )
 
     fun load() {
@@ -45,6 +53,8 @@ object ModConfig {
             isSpawnTeleportEnabled = config.isSpawnTeleportEnabled
             teleportDelaySeconds = config.teleportDelaySeconds
             syncKubeJsScripts = config.syncKubeJsScripts
+            isDayLightCycleControlEnabled = config.isDayLightCycleControlEnabled
+            doHostileMobCheckBeforeTeleport = config.doHostileMobCheckBeforeTeleport
 
             println("[khm_apocalypse_mod] Config loaded successfully.")
 
