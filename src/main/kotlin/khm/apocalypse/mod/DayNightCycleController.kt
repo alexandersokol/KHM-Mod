@@ -28,7 +28,9 @@ object DayNightCycleController {
         if (ModConfig.isDayLightCycleControlEnabled.not()) return
 
         val server = event.entity.server ?: return
-        if (server.playerList.playerCount == 0) {
+        val actualPlayersCount = server.playerList.players.filterNot { it.uuid == event.entity.uuid }.size
+
+        if (actualPlayersCount == 0) {
             setDaylightCycle(server, false)
         }
     }
